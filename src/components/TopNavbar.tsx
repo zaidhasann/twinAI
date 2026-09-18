@@ -52,7 +52,7 @@ export const TopNavbar: React.FC<{ onOpenAssistant: () => void }> = ({ onOpenAss
  };
 
  return (
- <header className="h-16 border-b border-white/[0.08] bg-[#171B1F]/90 backdrop-blur-md px-4 sm:px-6 flex items-center justify-between sticky top-0 z-30">
+ <header className="glass-panel h-16 border-b border-white/[0.08] px-4 sm:px-6 flex items-center justify-between sticky top-0 z-30">
  {/* Left: Global Search Bar */}
  <form onSubmit={handleSearchSubmit} className="relative flex-1 min-w-0 max-w-md">
  <Search className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />

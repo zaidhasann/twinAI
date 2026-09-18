@@ -33,7 +33,7 @@ export function MetricCard({
   const isNegative = change !== undefined && change < 0;
 
   return (
-    <div className="bg-[#232A30] border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-all group">
+    <div className="glass-panel bg-[#232A30] border border-white/[0.06] rounded-xl p-5 transition-all group">
       <div className="flex items-start justify-between mb-3">
         <div className="flex items-center gap-2">
           {icon && (

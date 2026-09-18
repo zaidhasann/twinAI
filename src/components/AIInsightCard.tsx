@@ -20,7 +20,7 @@ export function AIInsightCard({ title = 'TwinAI Insight', insight = 'Your latest
   const cfg = priorityConfig[priority];
 
   return (
-    <div className={`bg-[#232A30] border ${cfg.border} rounded-xl p-4 hover:border-white/[0.12] transition-all`}>
+    <div className={`glass-panel bg-[#232A30] border ${cfg.border} rounded-xl p-4 transition-all`}>
       <div className="flex items-start gap-3">
         <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-[#8B6FC7]/20 to-[#7ED6A5]/20 border border-[#8B6FC7]/30 flex items-center justify-center shrink-0 mt-0.5">
           <Sparkles className="w-4 h-4 text-[#8B6FC7]" />

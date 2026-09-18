@@ -20,7 +20,7 @@ export function CompanyCard({ company, onClick }: CompanyCardProps) {
     <Link
       to={`/companies/${company.id}`}
       onClick={onClick}
-      className="block bg-[#232A30] border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] hover:bg-[#2D353B] transition-all cursor-pointer group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8B6FC7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#171B1F]"
+      className="glass-panel block bg-[#232A30] border border-white/[0.06] rounded-xl p-5 transition-all cursor-pointer group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8B6FC7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#171B1F]"
     >
       {/* Header */}
       <div className="flex items-start justify-between mb-4">

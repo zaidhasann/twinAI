@@ -82,7 +82,7 @@ export function AIChat({ isOpen, onClose }: AIChatProps) {
 
   return (
     <div
-      className={`fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-[#232A30] border border-white/[0.12] rounded-xl shadow-2xl flex flex-col transition-all duration-300 overflow-hidden ${widthClass} ${heightClass}`}
+      className={`glass-panel fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-[#232A30] border border-white/[0.12] rounded-xl shadow-2xl flex flex-col transition-all duration-300 overflow-hidden ${widthClass} ${heightClass}`}
     >
       {/* Chat Header */}
       <div className="p-4 border-b border-white/[0.08] bg-[#171B1F]/90 backdrop-blur-md flex items-center justify-between shrink-0">

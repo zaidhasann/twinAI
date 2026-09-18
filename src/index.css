@@ -134,6 +134,54 @@ select:focus-visible {
   color: #6F878F;
 }
 
+.glass-panel {
+  background: linear-gradient(135deg, rgba(35, 42, 48, 0.82), rgba(29, 36, 41, 0.68));
+  border: 1px solid rgba(244, 241, 234, 0.13);
+  box-shadow:
+    inset 0 1px 0 rgba(244, 241, 234, 0.08),
+    0 18px 45px rgba(5, 8, 10, 0.18);
+  backdrop-filter: blur(18px) saturate(125%);
+  -webkit-backdrop-filter: blur(18px) saturate(125%);
+}
+
+.glass-panel:hover {
+  border-color: rgba(184, 164, 232, 0.28);
+  box-shadow:
+    inset 0 1px 0 rgba(244, 241, 234, 0.1),
+    0 22px 55px rgba(5, 8, 10, 0.24);
+}
+
+/* Extend the glass language to page-level cards that share the surface token. */
+[class*="bg-[#232A30]"] {
+  background: linear-gradient(135deg, rgba(35, 42, 48, 0.78), rgba(29, 36, 41, 0.62));
+  box-shadow:
+    inset 0 1px 0 rgba(244, 241, 234, 0.06),
+    0 14px 34px rgba(5, 8, 10, 0.14);
+  backdrop-filter: blur(14px) saturate(118%);
+  -webkit-backdrop-filter: blur(14px) saturate(118%);
+}
+
+[class*="bg-gradient-to-br"][class*="from-[#232A30]"] {
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+}
+
+/* Glass treatment for controls and floating overlays. */
+[class*="bg-white/[0.05]"],
+[class*="bg-white/[0.07]"],
+[class*="bg-[#171B1F]"][class*="border"] {
+  background-color: rgba(23, 27, 31, 0.48);
+  border-color: rgba(244, 241, 234, 0.12);
+  backdrop-filter: blur(12px) saturate(115%);
+  -webkit-backdrop-filter: blur(12px) saturate(115%);
+}
+
+[class*="shadow-2xl"] {
+  box-shadow:
+    inset 0 1px 0 rgba(244, 241, 234, 0.07),
+    0 24px 70px rgba(5, 8, 10, 0.3);
+}
+
 /* Keep scores and compact dashboard data aligned while they change. */
 [class*="text-2xl"],
 [class*="text-3xl"],
