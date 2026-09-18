@@ -51,8 +51,8 @@ export const InterviewsPage: React.FC = () => {
     return (
       <div className="space-y-6 animate-pulse">
         <div className="h-10 bg-white/[0.05] rounded-xl w-1/3" />
-        <div className="h-44 bg-white/[0.05] rounded-2xl" />
-        <div className="h-64 bg-white/[0.05] rounded-2xl" />
+        <div className="h-44 bg-white/[0.05] rounded-xl" />
+        <div className="h-64 bg-white/[0.05] rounded-xl" />
       </div>
     );
   }
@@ -88,7 +88,7 @@ export const InterviewsPage: React.FC = () => {
       {/* Main Score & Chart Section */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
         {/* Overall Interview Readiness Score */}
-        <div className="lg:col-span-4 bg-gradient-to-br from-[#232A30] to-[#29333A] border border-white/[0.1] rounded-2xl p-6 flex flex-col justify-between shadow-xl">
+        <div className="lg:col-span-4 bg-gradient-to-br from-[#232A30] to-[#29333A] border border-white/[0.1] rounded-xl p-6 flex flex-col justify-between shadow-xl">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-gray-400">
               Interview Readiness
@@ -117,7 +117,7 @@ export const InterviewsPage: React.FC = () => {
         </div>
 
         {/* Weekly Progress Line Chart */}
-        <div className="lg:col-span-8 bg-[#232A30] border border-white/[0.08] rounded-2xl p-6 flex flex-col justify-between">
+        <div className="lg:col-span-8 bg-[#232A30] border border-white/[0.08] rounded-xl p-6 flex flex-col justify-between">
           <div className="flex items-center justify-between mb-2">
             <div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-gray-300">
@@ -160,7 +160,7 @@ export const InterviewsPage: React.FC = () => {
       </div>
 
       {/* Subscores Breakdown */}
-      <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-6 space-y-4">
+      <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-6 space-y-4">
         <h3 className="text-sm font-bold uppercase tracking-wider text-gray-300">
           Competency Evaluation Rubric
         </h3>
@@ -219,7 +219,7 @@ export const InterviewsPage: React.FC = () => {
       </div>
 
       {/* AI Feedback & Actionable Coaching */}
-      <div className="bg-gradient-to-br from-[#232A30] to-[#29333A] border border-amber-500/30 rounded-2xl p-6 sm:p-7 space-y-5 shadow-xl">
+      <div className="bg-gradient-to-br from-[#232A30] to-[#29333A] border border-amber-500/30 rounded-xl p-6 sm:p-7 space-y-5 shadow-xl">
         <div className="flex items-center gap-2.5">
           <div className="p-1.5 rounded-lg bg-amber-500/20 text-[#F4B860]">
             <Sparkles className="w-4 h-4" />

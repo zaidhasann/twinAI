@@ -51,7 +51,7 @@ export const CompaniesPage: React.FC = () => {
       </div>
 
       {/* Filter and Sort Toolbar */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-[#232A30] border border-white/[0.08] p-4 rounded-2xl">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-[#232A30] border border-white/[0.08] p-4 rounded-xl">
         {/* Search */}
         <div className="relative flex-1 max-w-md">
           <Search className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
@@ -90,7 +90,7 @@ export const CompaniesPage: React.FC = () => {
 
       {/* Grid of Companies */}
       {filteredCompanies.length === 0 ? (
-        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-12 text-center space-y-3">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-12 text-center space-y-3">
           <Building2 className="w-10 h-10 text-gray-500 mx-auto" />
           <h3 className="text-base font-bold text-white">No company matches</h3>
           <p className="text-xs text-gray-400 max-w-sm mx-auto">

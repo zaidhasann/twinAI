@@ -64,14 +64,14 @@ export const OverviewPage: React.FC = () => {
   if (loading) {
     return (
       <div className="space-y-6 animate-pulse">
-        <div className="h-12 bg-white/[0.05] rounded-2xl w-1/3" />
+        <div className="h-12 bg-white/[0.05] rounded-xl w-1/3" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="h-56 bg-white/[0.05] rounded-2xl md:col-span-2" />
-          <div className="h-56 bg-white/[0.05] rounded-2xl" />
+          <div className="h-56 bg-white/[0.05] rounded-xl md:col-span-2" />
+          <div className="h-56 bg-white/[0.05] rounded-xl" />
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
           {[...Array(6)].map((_, i) => (
-            <div key={i} className="h-28 bg-white/[0.05] rounded-2xl" />
+            <div key={i} className="h-28 bg-white/[0.05] rounded-xl" />
           ))}
         </div>
       </div>
@@ -112,7 +112,7 @@ export const OverviewPage: React.FC = () => {
       {/* Main Feature Highlight: Placement Readiness Hero Banner */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
         {/* Left Hero Card: Placement Readiness Gauge */}
-        <div className="lg:col-span-5 bg-gradient-to-br from-[#232A30] to-[#273036] border border-white/[0.1] rounded-2xl p-6 sm:p-7 flex flex-col justify-between shadow-xl relative overflow-hidden">
+        <div className="lg:col-span-5 bg-gradient-to-br from-[#232A30] to-[#273036] border border-white/[0.1] rounded-xl p-6 sm:p-7 flex flex-col justify-between shadow-xl relative overflow-hidden">
           <div className="relative z-10">
             <div className="flex items-center justify-between">
               <span className="text-xs font-bold text-gray-400 uppercase tracking-wider">

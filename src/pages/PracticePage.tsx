@@ -47,7 +47,7 @@ export const PracticePage: React.FC = () => {
       </div>
 
       {/* Section 1: Recommended For You */}
-      <div className="bg-gradient-to-br from-[#232A30] to-[#29333A] border border-[#2E9D6B]/30 rounded-2xl p-6 sm:p-7 space-y-4 shadow-xl">
+      <div className="bg-gradient-to-br from-[#232A30] to-[#29333A] border border-[#2E9D6B]/30 rounded-xl p-6 sm:p-7 space-y-4 shadow-xl">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
             <div className="flex items-center gap-2">
@@ -122,7 +122,7 @@ export const PracticePage: React.FC = () => {
       {/* Two Columns: Skill Gap Practice & Interview Practice */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Skill Gap Practice: System Design */}
-        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-6 flex flex-col justify-between space-y-4">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-6 flex flex-col justify-between space-y-4">
           <div>
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center gap-2">
@@ -168,7 +168,7 @@ export const PracticePage: React.FC = () => {
         </div>
 
         {/* Interview Practice: Behavioral & Situational */}
-        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-6 flex flex-col justify-between space-y-4">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-6 flex flex-col justify-between space-y-4">
           <div>
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center gap-2">

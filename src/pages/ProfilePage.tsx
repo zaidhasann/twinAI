@@ -31,7 +31,7 @@ export const ProfilePage: React.FC = () => {
     return (
       <div className="space-y-6 animate-pulse">
         <div className="h-12 bg-white/[0.05] rounded-xl w-1/3" />
-        <div className="h-64 bg-white/[0.05] rounded-2xl" />
+        <div className="h-64 bg-white/[0.05] rounded-xl" />
       </div>
     );
   }
@@ -64,9 +64,9 @@ export const ProfilePage: React.FC = () => {
       </div>
 
       {/* Main Student Profile Card */}
-      <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-xl">
+      <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-xl">
         <div className="flex items-start gap-5">
-          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-tr from-[#2E9D6B] to-[#7ED6A5] p-[2px] shadow-xl shrink-0">
+          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl bg-gradient-to-tr from-[#2E9D6B] to-[#7ED6A5] p-[2px] shadow-xl shrink-0">
             <div className="w-full h-full bg-[#171B1F] rounded-[14px] flex items-center justify-center font-extrabold text-2xl text-white">
               AS
             </div>
@@ -125,19 +125,19 @@ export const ProfilePage: React.FC = () => {
 
       {/* Profile Metrics Snapshot */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-4 text-center">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-4 text-center">
           <div className="text-2xl font-extrabold text-[#2E9D6B]">{profile.stats.leetCodeProblems}</div>
           <span className="text-xs text-gray-400 font-medium mt-0.5 block">LeetCode Solved</span>
         </div>
-        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-4 text-center">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-4 text-center">
           <div className="text-2xl font-extrabold text-[#7ED6A5]">{profile.stats.githubRepos}</div>
           <span className="text-xs text-gray-400 font-medium mt-0.5 block">GitHub Repos</span>
         </div>
-        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-4 text-center">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-4 text-center">
           <div className="text-2xl font-extrabold text-[#F4B860]">{profile.stats.streakDays} Days</div>
           <span className="text-xs text-gray-400 font-medium mt-0.5 block">Current Streak</span>
         </div>
-        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-4 text-center">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-4 text-center">
           <div className="text-2xl font-extrabold text-white">{profile.stats.projectsCount}</div>
           <span className="text-xs text-gray-400 font-medium mt-0.5 block">Full Stack Projects</span>
         </div>

@@ -8,7 +8,7 @@ interface SkillRadarCardProps {
 
 export function SkillRadarCard({ data }: SkillRadarCardProps) {
   return (
-    <div className="bg-[#232A30] border border-white/[0.06] rounded-2xl p-5">
+    <div className="bg-[#232A30] border border-white/[0.06] rounded-xl p-5">
       <h3 className="text-sm font-semibold text-white mb-1">Skill Radar</h3>
       <p className="text-xs text-gray-400 mb-4">Your competency across key domains</p>
 

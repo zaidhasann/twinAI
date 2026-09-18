@@ -83,7 +83,7 @@ export const IntegrationsPage: React.FC = () => {
         {integrations.map((item) => (
           <div
             key={item.id}
-            className="bg-[#232A30] border border-white/[0.08] hover:border-white/[0.18] rounded-2xl p-6 flex flex-col justify-between transition-all group"
+            className="bg-[#232A30] border border-white/[0.08] hover:border-white/[0.18] rounded-xl p-6 flex flex-col justify-between transition-all group"
           >
             <div>
               <div className="flex items-start justify-between gap-3 mb-4">

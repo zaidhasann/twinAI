@@ -43,7 +43,7 @@ export const SkillGapPage: React.FC = () => {
     return (
       <div
         key={skill.id}
-        className="bg-[#232A30] border border-white/[0.08] hover:border-white/[0.18] rounded-2xl p-6 flex flex-col justify-between transition-all group"
+        className="bg-[#232A30] border border-white/[0.08] hover:border-white/[0.18] rounded-xl p-6 flex flex-col justify-between transition-all group"
       >
         <div className="space-y-4">
           <div className="flex items-start justify-between gap-4">
@@ -169,7 +169,7 @@ export const SkillGapPage: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="bg-[#232A30] border border-amber-500/30 rounded-2xl p-5 flex items-center gap-4">
+        <div className="bg-[#232A30] border border-amber-500/30 rounded-xl p-5 flex items-center gap-4">
           <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-[#F4B860]">
             <AlertTriangle className="w-6 h-6" />
           </div>
@@ -179,7 +179,7 @@ export const SkillGapPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-[#232A30] border border-indigo-500/30 rounded-2xl p-5 flex items-center gap-4">
+        <div className="bg-[#232A30] border border-indigo-500/30 rounded-xl p-5 flex items-center gap-4">
           <div className="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-[#2E9D6B]">
             <BookOpen className="w-6 h-6" />
           </div>
@@ -189,7 +189,7 @@ export const SkillGapPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-[#232A30] border border-teal-500/30 rounded-2xl p-5 flex items-center gap-4">
+        <div className="bg-[#232A30] border border-teal-500/30 rounded-xl p-5 flex items-center gap-4">
           <div className="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-[#7ED6A5]">
             <CheckCircle2 className="w-6 h-6" />
           </div>

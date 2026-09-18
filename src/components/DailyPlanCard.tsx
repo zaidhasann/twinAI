@@ -46,7 +46,7 @@ export function DailyPlanCard({ tasks, onTaskToggle }: DailyPlanCardProps) {
   };
 
   return (
-    <div className="bg-[#232A30] border border-white/[0.06] rounded-2xl p-5">
+    <div className="bg-[#232A30] border border-white/[0.06] rounded-xl p-5">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <div>

@@ -74,7 +74,7 @@ export const RoadmapPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-[#232A30] border border-white/[0.1] rounded-2xl px-5 py-3.5 flex items-center gap-4 self-start sm:self-auto min-w-[220px]">
+        <div className="bg-[#232A30] border border-white/[0.1] rounded-xl px-5 py-3.5 flex items-center gap-4 self-start sm:self-auto min-w-[220px]">
           <div>
             <span className="text-[10px] uppercase font-bold text-gray-400 tracking-wider block">
               Overall Roadmap
@@ -132,7 +132,7 @@ export const RoadmapPage: React.FC = () => {
                 )}
               </div>
 
-              <div className="bg-[#232A30] border border-white/[0.08] hover:border-white/[0.15] rounded-2xl p-6 transition-all shadow-xl shadow-black/20">
+              <div className="bg-[#232A30] border border-white/[0.08] hover:border-white/[0.15] rounded-xl p-6 transition-all shadow-xl shadow-black/20">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-white/[0.06]">
                   <div>
                     <div className="flex items-center gap-2.5">

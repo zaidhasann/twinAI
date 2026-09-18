@@ -61,7 +61,7 @@ export const ProgressPage: React.FC = () => {
       </div>
 
       {/* Main Readiness Growth Chart */}
-      <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-6 sm:p-7 space-y-4">
+      <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-6 sm:p-7 space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
           <div>
             <h3 className="text-base font-bold text-white">Placement Readiness Trajectory</h3>
@@ -124,7 +124,7 @@ export const ProgressPage: React.FC = () => {
       {/* Two Column Charts: Study Hours per day & Problems Solved */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Daily Study Hours */}
-        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-6 space-y-4">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-6 space-y-4">
           <div className="flex items-center justify-between">
             <div>
               <h3 className="text-sm font-bold text-white">Weekly Study Hours</h3>
@@ -157,7 +157,7 @@ export const ProgressPage: React.FC = () => {
         </div>
 
         {/* Problems Solved */}
-        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-6 space-y-4">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-6 space-y-4">
           <div className="flex items-center justify-between">
             <div>
               <h3 className="text-sm font-bold text-white">DSA Problems Solved</h3>

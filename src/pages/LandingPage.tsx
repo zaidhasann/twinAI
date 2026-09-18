@@ -92,7 +92,7 @@ export const LandingPage: React.FC = () => {
         </div>
 
         {/* Realistic Dashboard Preview Frame */}
-        <div id="preview" className="w-full mt-16 rounded-2xl border border-white/[0.12] bg-[#232A30] shadow-2xl shadow-black/80 p-4 sm:p-6 text-left relative overflow-hidden">
+        <div id="preview" className="w-full mt-16 rounded-xl border border-white/[0.12] bg-[#232A30] shadow-2xl shadow-black/80 p-4 sm:p-6 text-left relative overflow-hidden">
           <div className="flex items-center justify-between pb-4 border-b border-white/[0.08] mb-6 text-xs text-gray-400">
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 rounded-full bg-red-500/60" />
@@ -153,7 +153,7 @@ export const LandingPage: React.FC = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Step 01 - Deep Navy Card */}
-            <div className="bg-[#171B1F] border-2 border-white/[0.15] rounded-2xl p-6 flex flex-col justify-between space-y-6 shadow-xl">
+            <div className="bg-[#171B1F] border-2 border-white/[0.15] rounded-xl p-6 flex flex-col justify-between space-y-6 shadow-xl">
               <div className="space-y-3">
                 <div className="w-10 h-10 rounded-xl bg-white/[0.06] border border-white/[0.1] flex items-center justify-center font-extrabold text-sm text-white">
                   01
@@ -169,7 +169,7 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Step 02 - Electric Indigo Card */}
-            <div className="bg-[#232A30] border-2 border-[#8B6FC7]/50 rounded-2xl p-6 flex flex-col justify-between space-y-6 shadow-xl shadow-indigo-950/30">
+            <div className="bg-[#232A30] border-2 border-[#8B6FC7]/50 rounded-xl p-6 flex flex-col justify-between space-y-6 shadow-xl shadow-indigo-950/30">
               <div className="space-y-3">
                 <div className="w-10 h-10 rounded-xl bg-[#8B6FC7]/20 border border-[#8B6FC7]/50 flex items-center justify-center font-extrabold text-sm text-[#8B6FC7]">
                   02
@@ -185,7 +185,7 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Step 03 - Amber Card */}
-            <div className="bg-[#232A30] border-2 border-[#F4B860]/50 rounded-2xl p-6 flex flex-col justify-between space-y-6 shadow-xl shadow-amber-950/20">
+            <div className="bg-[#232A30] border-2 border-[#F4B860]/50 rounded-xl p-6 flex flex-col justify-between space-y-6 shadow-xl shadow-amber-950/20">
               <div className="space-y-3">
                 <div className="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/50 flex items-center justify-center font-extrabold text-sm text-[#F4B860]">
                   03
@@ -201,7 +201,7 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Step 04 - Teal Card */}
-            <div className="bg-[#232A30] border-2 border-[#7ED6A5]/50 rounded-2xl p-6 flex flex-col justify-between space-y-6 shadow-xl shadow-teal-950/20">
+            <div className="bg-[#232A30] border-2 border-[#7ED6A5]/50 rounded-xl p-6 flex flex-col justify-between space-y-6 shadow-xl shadow-teal-950/20">
               <div className="space-y-3">
                 <div className="w-10 h-10 rounded-xl bg-teal-500/20 border border-teal-500/50 flex items-center justify-center font-extrabold text-sm text-[#7ED6A5]">
                   04
@@ -236,7 +236,7 @@ export const LandingPage: React.FC = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Feature 1 */}
-            <div className="bg-[#232A30] border border-white/[0.08] hover:border-indigo-500/40 p-6 rounded-2xl space-y-3 transition-all group">
+            <div className="bg-[#232A30] border border-white/[0.08] hover:border-indigo-500/40 p-6 rounded-xl space-y-3 transition-all group">
               <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-[#8B6FC7]">
                 <Cpu className="w-5 h-5" />
               </div>
@@ -249,7 +249,7 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Feature 2 */}
-            <div className="bg-[#232A30] border border-white/[0.08] hover:border-amber-500/40 p-6 rounded-2xl space-y-3 transition-all group">
+            <div className="bg-[#232A30] border border-white/[0.08] hover:border-amber-500/40 p-6 rounded-xl space-y-3 transition-all group">
               <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-[#F4B860]">
                 <Target className="w-5 h-5" />
               </div>
@@ -262,7 +262,7 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Feature 3 */}
-            <div className="bg-[#232A30] border border-white/[0.08] hover:border-teal-500/40 p-6 rounded-2xl space-y-3 transition-all group">
+            <div className="bg-[#232A30] border border-white/[0.08] hover:border-teal-500/40 p-6 rounded-xl space-y-3 transition-all group">
               <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-[#7ED6A5]">
                 <CheckCircle2 className="w-5 h-5" />
               </div>
@@ -275,7 +275,7 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Feature 4 */}
-            <div className="bg-[#232A30] border border-white/[0.08] hover:border-indigo-500/40 p-6 rounded-2xl space-y-3 transition-all group">
+            <div className="bg-[#232A30] border border-white/[0.08] hover:border-indigo-500/40 p-6 rounded-xl space-y-3 transition-all group">
               <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-[#8B6FC7]">
                 <Building2 className="w-5 h-5" />
               </div>
@@ -288,7 +288,7 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Feature 5 */}
-            <div className="bg-[#232A30] border border-white/[0.08] hover:border-teal-500/40 p-6 rounded-2xl space-y-3 transition-all group">
+            <div className="bg-[#232A30] border border-white/[0.08] hover:border-teal-500/40 p-6 rounded-xl space-y-3 transition-all group">
               <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-[#7ED6A5]">
                 <Milestone className="w-5 h-5" />
               </div>
@@ -301,7 +301,7 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Feature 6 */}
-            <div className="bg-[#232A30] border border-white/[0.08] hover:border-amber-500/40 p-6 rounded-2xl space-y-3 transition-all group">
+            <div className="bg-[#232A30] border border-white/[0.08] hover:border-amber-500/40 p-6 rounded-xl space-y-3 transition-all group">
               <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-[#F4B860]">
                 <Mic className="w-5 h-5" />
               </div>
@@ -314,7 +314,7 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Feature 7 */}
-            <div className="bg-[#232A30] border border-white/[0.08] hover:border-indigo-500/40 p-6 rounded-2xl space-y-3 transition-all group">
+            <div className="bg-[#232A30] border border-white/[0.08] hover:border-indigo-500/40 p-6 rounded-xl space-y-3 transition-all group">
               <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-[#8B6FC7]">
                 <FileCheck className="w-5 h-5" />
               </div>
@@ -327,7 +327,7 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Feature 8 */}
-            <div className="bg-[#232A30] border border-white/[0.08] hover:border-teal-500/40 p-6 rounded-2xl space-y-3 transition-all group">
+            <div className="bg-[#232A30] border border-white/[0.08] hover:border-teal-500/40 p-6 rounded-xl space-y-3 transition-all group">
               <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-[#7ED6A5]">
                 <TrendingUp className="w-5 h-5" />
               </div>

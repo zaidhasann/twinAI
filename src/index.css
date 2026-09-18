@@ -60,6 +60,10 @@
 
 body {
   background-color: #171B1F;
+  background-image:
+    linear-gradient(135deg, rgba(139, 111, 199, 0.06), transparent 34%),
+    linear-gradient(315deg, rgba(46, 157, 107, 0.045), transparent 38%);
+  background-attachment: fixed;
   color: #F4F1EA;
   font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
   font-size: 14px;
@@ -102,6 +106,32 @@ input,
 textarea,
 select {
   font: inherit;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #B8A4E8;
+  outline-offset: 3px;
+}
+
+::selection {
+  background: #7357AB;
+  color: #F4F1EA;
+}
+
+::placeholder {
+  color: #6F878F;
 }
 
 /* Keep scores and compact dashboard data aligned while they change. */

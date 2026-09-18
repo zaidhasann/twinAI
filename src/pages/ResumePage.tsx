@@ -40,8 +40,8 @@ export const ResumePage: React.FC = () => {
     return (
       <div className="space-y-6 animate-pulse">
         <div className="h-10 bg-white/[0.05] rounded-xl w-1/3" />
-        <div className="h-44 bg-white/[0.05] rounded-2xl" />
-        <div className="h-64 bg-white/[0.05] rounded-2xl" />
+        <div className="h-44 bg-white/[0.05] rounded-xl" />
+        <div className="h-64 bg-white/[0.05] rounded-xl" />
       </div>
     );
   }
@@ -86,7 +86,7 @@ export const ResumePage: React.FC = () => {
       {/* Main Score & Breakdown */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
         {/* Overall Score */}
-        <div className="lg:col-span-4 bg-gradient-to-br from-[#232A30] to-[#29333A] border border-white/[0.1] rounded-2xl p-6 flex flex-col justify-between shadow-xl">
+        <div className="lg:col-span-4 bg-gradient-to-br from-[#232A30] to-[#29333A] border border-white/[0.1] rounded-xl p-6 flex flex-col justify-between shadow-xl">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-gray-400">
               Overall ATS Score
@@ -109,7 +109,7 @@ export const ResumePage: React.FC = () => {
         </div>
 
         {/* Breakdown bars */}
-        <div className="lg:col-span-8 bg-[#232A30] border border-white/[0.08] rounded-2xl p-6 space-y-4">
+        <div className="lg:col-span-8 bg-[#232A30] border border-white/[0.08] rounded-xl p-6 space-y-4">
           <h3 className="text-sm font-bold uppercase tracking-wider text-gray-300">
             ATS Evaluation Subscores
           </h3>
@@ -169,7 +169,7 @@ export const ResumePage: React.FC = () => {
       </div>
 
       {/* AI Suggestions Box */}
-      <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-6 space-y-4">
+      <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-6 space-y-4">
         <div className="flex items-center gap-2">
           <Sparkles className="w-4 h-4 text-[#2E9D6B]" />
           <h3 className="text-base font-bold text-white">AI Suggestions</h3>

@@ -85,7 +85,7 @@ export const DigitalTwinPage: React.FC = () => {
 
       {/* Twin Confidence & Datapoints Bar */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-4 flex items-center gap-3.5">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-4 flex items-center gap-3.5">
           <div className="w-11 h-11 rounded-xl bg-[#8B6FC7]/10 border border-indigo-500/20 flex items-center justify-center text-[#8B6FC7]">
             <ShieldCheck className="w-5 h-5" />
           </div>
@@ -95,7 +95,7 @@ export const DigitalTwinPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-4 flex items-center gap-3.5">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-4 flex items-center gap-3.5">
           <div className="w-11 h-11 rounded-xl bg-[#7ED6A5]/10 border border-teal-500/20 flex items-center justify-center text-[#7ED6A5]">
             <Database className="w-5 h-5" />
           </div>
@@ -105,7 +105,7 @@ export const DigitalTwinPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-4 flex items-center gap-3.5">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-4 flex items-center gap-3.5">
           <div className="w-11 h-11 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-[#F4B860]">
             <Clock className="w-5 h-5" />
           </div>
@@ -119,7 +119,7 @@ export const DigitalTwinPage: React.FC = () => {
       {/* Central Interactive Twin Visualizer */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Visual Graph Panel */}
-        <div className="lg:col-span-8 bg-gradient-to-br from-[#232A30] to-[#273036] border border-white/[0.08] rounded-2xl p-6 sm:p-8 min-h-[440px] relative overflow-hidden flex flex-col justify-between">
+        <div className="lg:col-span-8 bg-gradient-to-br from-[#232A30] to-[#273036] border border-white/[0.08] rounded-xl p-6 sm:p-8 min-h-[440px] relative overflow-hidden flex flex-col justify-between">
           {/* Subtle neural network grid background lines */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
 
@@ -135,7 +135,7 @@ export const DigitalTwinPage: React.FC = () => {
 
           {/* Central Core Identity Node */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center text-center">
-            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl bg-gradient-to-tr from-[#8B6FC7] to-[#7ED6A5] p-[2px] shadow-2xl shadow-indigo-600/30 animate-pulse-subtle">
+            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-xl bg-gradient-to-tr from-[#8B6FC7] to-[#7ED6A5] p-[2px] shadow-2xl shadow-indigo-600/30 animate-pulse-subtle">
               <div className="w-full h-full bg-[#171B1F] rounded-[22px] flex flex-col items-center justify-center p-2">
                 <Cpu className="w-6 h-6 text-[#8B6FC7] mb-1" />
                 <span className="text-xs font-extrabold text-white leading-none">Alex.Twin</span>
@@ -189,7 +189,7 @@ export const DigitalTwinPage: React.FC = () => {
         </div>
 
         {/* Node Inspector Side Panel */}
-        <div className="lg:col-span-4 bg-[#232A30] border border-white/[0.08] rounded-2xl p-6 flex flex-col justify-between space-y-5">
+        <div className="lg:col-span-4 bg-[#232A30] border border-white/[0.08] rounded-xl p-6 flex flex-col justify-between space-y-5">
           <div>
             <div className="flex items-center justify-between mb-3 pb-3 border-b border-white/[0.06]">
               <span className="text-xs font-bold text-gray-400 uppercase tracking-wider">

@@ -35,10 +35,10 @@ export const CompanyDetailPage: React.FC = () => {
     return (
       <div className="space-y-6 animate-pulse">
         <div className="h-8 bg-white/[0.05] rounded-xl w-32" />
-        <div className="h-48 bg-white/[0.05] rounded-2xl" />
+        <div className="h-48 bg-white/[0.05] rounded-xl" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="h-64 bg-white/[0.05] rounded-2xl" />
-          <div className="h-64 bg-white/[0.05] rounded-2xl" />
+          <div className="h-64 bg-white/[0.05] rounded-xl" />
+          <div className="h-64 bg-white/[0.05] rounded-xl" />
         </div>
       </div>
     );
@@ -46,7 +46,7 @@ export const CompanyDetailPage: React.FC = () => {
 
   if (!company) {
     return (
-      <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-12 text-center space-y-4">
+      <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-12 text-center space-y-4">
         <h2 className="text-lg font-bold text-white">Company Not Found</h2>
         <p className="text-xs text-gray-400">The company profile requested could not be located.</p>
         <Link to="/companies" className="text-xs bg-[#2E9D6B] text-white px-4 py-2 rounded-xl inline-block">
@@ -68,9 +68,9 @@ export const CompanyDetailPage: React.FC = () => {
       </button>
 
       {/* Main Header Banner */}
-      <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <div className="bg-[#232A30] border border-white/[0.08] rounded-xl p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div className="flex items-start gap-4">
-          <div className="w-16 h-16 rounded-2xl bg-[#171B1F] border border-white/[0.1] flex items-center justify-center font-extrabold text-2xl text-white shadow-xl">
+          <div className="w-16 h-16 rounded-xl bg-[#171B1F] border border-white/[0.1] flex items-center justify-center font-extrabold text-2xl text-white shadow-xl">
             {company.logo}
           </div>
           <div>
@@ -99,7 +99,7 @@ export const CompanyDetailPage: React.FC = () => {
         </div>
 
         {/* Big Readiness Score */}
-        <div className="bg-[#171B1F] border border-white/[0.08] rounded-2xl p-5 flex flex-col items-center justify-center min-w-[180px] text-center">
+        <div className="bg-[#171B1F] border border-white/[0.08] rounded-xl p-5 flex flex-col items-center justify-center min-w-[180px] text-center">
           <span className="text-xs font-bold uppercase tracking-wider text-gray-400">
             Your Readiness
           </span>
@@ -117,7 +117,7 @@ export const CompanyDetailPage: React.FC = () => {
       {/* Two Column Breakdown: What You Have vs What You Are Missing */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* What You Already Have */}
-        <div className="bg-[#232A30] border border-teal-500/20 rounded-2xl p-6 space-y-4">
+        <div className="bg-[#232A30] border border-teal-500/20 rounded-xl p-6 space-y-4">
           <div className="flex items-center gap-2 pb-3 border-b border-white/[0.06]">
             <CheckCircle2 className="w-5 h-5 text-[#7ED6A5]" />
             <div>
@@ -145,7 +145,7 @@ export const CompanyDetailPage: React.FC = () => {
         </div>
 
         {/* What You're Missing */}
-        <div className="bg-[#232A30] border border-amber-500/20 rounded-2xl p-6 space-y-4">
+        <div className="bg-[#232A30] border border-amber-500/20 rounded-xl p-6 space-y-4">
           <div className="flex items-center gap-2 pb-3 border-b border-white/[0.06]">
             <AlertTriangle className="w-5 h-5 text-[#F4B860]" />
             <div>
@@ -174,7 +174,7 @@ export const CompanyDetailPage: React.FC = () => {
       </div>
 
       {/* Recommended Preparation Sequence */}
-      <div className="bg-gradient-to-br from-[#232A30] to-[#29333A] border border-[#2E9D6B]/30 rounded-2xl p-6 sm:p-8 space-y-5 shadow-xl">
+      <div className="bg-gradient-to-br from-[#232A30] to-[#29333A] border border-[#2E9D6B]/30 rounded-xl p-6 sm:p-8 space-y-5 shadow-xl">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <div className="p-1.5 rounded-lg bg-[#2E9D6B]/20 text-[#2E9D6B]">

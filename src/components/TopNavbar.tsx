@@ -112,7 +112,7 @@ export const TopNavbar: React.FC<{ onOpenAssistant: () => void }> = ({ onOpenAss
  </button>
 
  {showNotifications && (
- <div className="absolute right-0 mt-2 w-80 md:w-96 bg-[#232A30] border border-white/[0.1] rounded-2xl shadow-2xl p-4 z-50 animate-in fade-in zoom-in-95">
+ <div className="absolute right-0 mt-2 w-80 md:w-96 bg-[#232A30] border border-white/[0.1] rounded-xl shadow-2xl p-4 z-50 animate-in fade-in zoom-in-95">
  <div className="flex items-center justify-between pb-3 border-b border-white/[0.08]">
  <div className="flex items-center gap-2">
  <span className="font-semibold text-sm text-white">Notifications</span>
@@ -180,7 +180,7 @@ export const TopNavbar: React.FC<{ onOpenAssistant: () => void }> = ({ onOpenAss
  </button>
 
  {showProfileMenu && (
- <div className="absolute right-0 mt-2 w-56 bg-[#232A30] border border-white/[0.1] rounded-2xl shadow-2xl p-2 z-50 animate-in fade-in zoom-in-95">
+ <div className="absolute right-0 mt-2 w-56 bg-[#232A30] border border-white/[0.1] rounded-xl shadow-2xl p-2 z-50 animate-in fade-in zoom-in-95">
  <div className="px-3 py-2 border-b border-white/[0.08]">
  <div className="text-xs font-semibold text-white">{profile?.name}</div>
  <div className="text-[11px] text-gray-400 truncate">{profile?.college}</div>
