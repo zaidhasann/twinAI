@@ -94,14 +94,14 @@ export const OverviewPage: React.FC = () => {
         <div className="flex items-center gap-2 self-start sm:self-auto">
           <button
             onClick={() => navigate('/digital-twin')}
-            className="bg-[#3A2A22] border border-white/[0.1] hover:border-indigo-500/40 text-xs text-gray-200 hover:text-white px-3.5 py-2 rounded-xl flex items-center gap-2 transition-all cursor-pointer"
+            className="bg-[#232A30] border border-white/[0.1] hover:border-indigo-500/40 text-xs text-gray-200 hover:text-white px-3.5 py-2 rounded-xl flex items-center gap-2 transition-all cursor-pointer"
           >
-            <Sparkles className="w-3.5 h-3.5 text-[#C56A4A]" />
+            <Sparkles className="w-3.5 h-3.5 text-[#8B6FC7]" />
             <span>Sync Digital Twin</span>
           </button>
           <button
             onClick={() => navigate('/progress')}
-            className="bg-[#C56A4A] hover:bg-[#A94F36] text-xs font-semibold text-white px-4 py-2 rounded-xl flex items-center gap-1.5 shadow-lg shadow-indigo-600/20 transition-all cursor-pointer"
+            className="bg-[#8B6FC7] hover:bg-[#7357AB] text-xs font-semibold text-white px-4 py-2 rounded-xl flex items-center gap-1.5 shadow-lg shadow-indigo-600/20 transition-all cursor-pointer"
           >
             <span>Full Report</span>
             <ChevronRight className="w-3.5 h-3.5" />
@@ -112,13 +112,13 @@ export const OverviewPage: React.FC = () => {
       {/* Main Feature Highlight: Placement Readiness Hero Banner */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
         {/* Left Hero Card: Placement Readiness Gauge */}
-        <div className="lg:col-span-5 bg-gradient-to-br from-[#3A2A22] to-[#33251E] border border-white/[0.1] rounded-2xl p-6 sm:p-7 flex flex-col justify-between shadow-xl relative overflow-hidden">
+        <div className="lg:col-span-5 bg-gradient-to-br from-[#232A30] to-[#273036] border border-white/[0.1] rounded-2xl p-6 sm:p-7 flex flex-col justify-between shadow-xl relative overflow-hidden">
           <div className="relative z-10">
             <div className="flex items-center justify-between">
               <span className="text-xs font-bold text-gray-400 uppercase tracking-wider">
                 Placement Readiness
               </span>
-              <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#91A889]/15 text-[#91A889] border border-teal-500/20">
+              <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#7ED6A5]/15 text-[#7ED6A5] border border-teal-500/20">
                 ? On Track
               </span>
             </div>
@@ -141,7 +141,7 @@ export const OverviewPage: React.FC = () => {
                     cx="50"
                     cy="50"
                     r="40"
-                    className="text-[#C56A4A] transition-all duration-1000 ease-out"
+                    className="text-[#8B6FC7] transition-all duration-1000 ease-out"
                     strokeWidth="10"
                     strokeDasharray={251.2}
                     strokeDashoffset={251.2 * (1 - (profile?.stats.placementReadiness || 78) / 100)}
@@ -163,8 +163,8 @@ export const OverviewPage: React.FC = () => {
             </div>
 
             {/* Stat comparison footnote */}
-            <div className="flex items-center justify-between text-xs p-3 rounded-xl bg-[#2A1E18]/70 border border-white/[0.04]">
-              <div className="flex items-center gap-1.5 text-[#91A889] font-semibold">
+            <div className="flex items-center justify-between text-xs p-3 rounded-xl bg-[#171B1F]/70 border border-white/[0.04]">
+              <div className="flex items-center gap-1.5 text-[#7ED6A5] font-semibold">
                 <ArrowUpRight className="w-4 h-4" />
                 <span>? 6% from last month</span>
               </div>
@@ -245,7 +245,7 @@ export const OverviewPage: React.FC = () => {
             value="84%"
             statusText="12-day streak"
             statusColor="amber"
-            icon={<Flame className="w-4 h-4 text-[#D6A05A]" />}
+            icon={<Flame className="w-4 h-4 text-[#F4B860]" />}
             subtitle="Active study cadence"
           />
         </div>
@@ -274,7 +274,7 @@ export const OverviewPage: React.FC = () => {
           </div>
           <button
             onClick={() => navigate('/companies')}
-            className="text-xs text-[#C56A4A] hover:text-indigo-300 font-semibold cursor-pointer"
+            className="text-xs text-[#8B6FC7] hover:text-indigo-300 font-semibold cursor-pointer"
           >
             Explore all companies ({companies.length}) ?
           </button>

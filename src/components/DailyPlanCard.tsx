@@ -9,17 +9,17 @@ interface DailyPlanCardProps {
 }
 
 const categoryColors: Record<string, string> = {
-  dsa: '#C56A4A',
-  project: '#91A889',
-  resume: '#D6A05A',
-  interview: '#EC4899',
+  dsa: '#2E9D6B',
+  project: '#7ED6A5',
+  resume: '#F4B860',
+  interview: '#F28BA8',
   learning: '#10B981',
 };
 
 const categoryBg: Record<string, string> = {
-  dsa: 'bg-[#C56A4A]/10 text-[#E8A58D]',
-  project: 'bg-[#91A889]/10 text-[#91A889]',
-  resume: 'bg-[#D6A05A]/10 text-[#D6A05A]',
+  dsa: 'bg-[#2E9D6B]/10 text-[#BFEAD4]',
+  project: 'bg-[#7ED6A5]/10 text-[#7ED6A5]',
+  resume: 'bg-[#F4B860]/10 text-[#F4B860]',
   interview: 'bg-pink-500/10 text-pink-400',
   learning: 'bg-emerald-500/10 text-emerald-400',
 };
@@ -46,7 +46,7 @@ export function DailyPlanCard({ tasks, onTaskToggle }: DailyPlanCardProps) {
   };
 
   return (
-    <div className="bg-[#3A2A22] border border-white/[0.06] rounded-2xl p-5">
+    <div className="bg-[#232A30] border border-white/[0.06] rounded-2xl p-5">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <div>
@@ -63,7 +63,7 @@ export function DailyPlanCard({ tasks, onTaskToggle }: DailyPlanCardProps) {
               cy="18"
               r="15"
               fill="none"
-              stroke="#C56A4A"
+              stroke="#2E9D6B"
               strokeWidth="3"
               strokeDasharray={'94.2 94.2'}
               strokeDashoffset={94.2 - (94.2 * progress) / 100}
@@ -90,7 +90,7 @@ export function DailyPlanCard({ tasks, onTaskToggle }: DailyPlanCardProps) {
           >
             <button className="shrink-0">
               {task.status === 'completed' ? (
-                <CheckCircle2 className="w-4.5 h-4.5 text-[#91A889]" />
+                <CheckCircle2 className="w-4.5 h-4.5 text-[#7ED6A5]" />
               ) : (
                 <Circle className="w-4.5 h-4.5 text-gray-500 group-hover:text-gray-300 transition-colors" />
               )}
@@ -113,8 +113,8 @@ export function DailyPlanCard({ tasks, onTaskToggle }: DailyPlanCardProps) {
 
             {task.priority && (
               <div className="flex items-center gap-1 shrink-0">
-                <Zap className="w-3 h-3 text-[#D6A05A]" />
-                <span className="text-[10px] font-medium text-[#D6A05A]">{task.priority}</span>
+                <Zap className="w-3 h-3 text-[#F4B860]" />
+                <span className="text-[10px] font-medium text-[#F4B860]">{task.priority}</span>
               </div>
             )}
           </div>

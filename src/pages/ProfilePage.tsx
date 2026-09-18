@@ -42,7 +42,7 @@ export const ProfilePage: React.FC = () => {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2 mb-1">
-            <span className="p-1.5 rounded-lg bg-[#C56A4A]/10 border border-indigo-500/20 text-[#C56A4A]">
+            <span className="p-1.5 rounded-lg bg-[#2E9D6B]/10 border border-indigo-500/20 text-[#2E9D6B]">
               <User className="w-4 h-4" />
             </span>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
@@ -56,7 +56,7 @@ export const ProfilePage: React.FC = () => {
 
         <button
           onClick={() => showToast('Profile editor opened', 'Saved to local prototype state', 'default')}
-          className="bg-[#3A2A22] border border-white/[0.1] hover:border-white/[0.2] text-xs font-semibold text-white px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all cursor-pointer self-start sm:self-auto"
+          className="bg-[#232A30] border border-white/[0.1] hover:border-white/[0.2] text-xs font-semibold text-white px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all cursor-pointer self-start sm:self-auto"
         >
           <Edit3 className="w-3.5 h-3.5" />
           <span>Edit Profile</span>
@@ -64,10 +64,10 @@ export const ProfilePage: React.FC = () => {
       </div>
 
       {/* Main Student Profile Card */}
-      <div className="bg-[#3A2A22] border border-white/[0.08] rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-xl">
+      <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-xl">
         <div className="flex items-start gap-5">
-          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-tr from-[#C56A4A] to-[#91A889] p-[2px] shadow-xl shrink-0">
-            <div className="w-full h-full bg-[#2A1E18] rounded-[14px] flex items-center justify-center font-extrabold text-2xl text-white">
+          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-tr from-[#2E9D6B] to-[#7ED6A5] p-[2px] shadow-xl shrink-0">
+            <div className="w-full h-full bg-[#171B1F] rounded-[14px] flex items-center justify-center font-extrabold text-2xl text-white">
               AS
             </div>
           </div>
@@ -77,7 +77,7 @@ export const ProfilePage: React.FC = () => {
               <h2 className="text-2xl font-extrabold text-white tracking-tight">
                 {profile.name}
               </h2>
-              <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-[#91A889]/10 text-[#91A889] border border-teal-500/20">
+              <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-[#7ED6A5]/10 text-[#7ED6A5] border border-teal-500/20">
                 Verified Candidate
               </span>
             </div>
@@ -92,7 +92,7 @@ export const ProfilePage: React.FC = () => {
             </p>
 
             <div className="flex flex-wrap items-center gap-3 pt-2 text-xs">
-              <span className="bg-[#2A1E18] px-3 py-1 rounded-lg border border-white/[0.08] font-mono text-indigo-400 font-bold">
+              <span className="bg-[#171B1F] px-3 py-1 rounded-lg border border-white/[0.08] font-mono text-indigo-400 font-bold">
                 CGPA: {profile.cgpa} / 10
               </span>
               <span className="text-gray-400">
@@ -106,7 +106,7 @@ export const ProfilePage: React.FC = () => {
         </div>
 
         {/* Target Companies Chips */}
-        <div className="bg-[#2A1E18] p-4 rounded-xl border border-white/[0.06] w-full md:w-auto min-w-[240px] space-y-2">
+        <div className="bg-[#171B1F] p-4 rounded-xl border border-white/[0.06] w-full md:w-auto min-w-[240px] space-y-2">
           <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400 block">
             Target Employers
           </span>
@@ -125,19 +125,19 @@ export const ProfilePage: React.FC = () => {
 
       {/* Profile Metrics Snapshot */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        <div className="bg-[#3A2A22] border border-white/[0.08] rounded-2xl p-4 text-center">
-          <div className="text-2xl font-extrabold text-[#C56A4A]">{profile.stats.leetCodeProblems}</div>
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-4 text-center">
+          <div className="text-2xl font-extrabold text-[#2E9D6B]">{profile.stats.leetCodeProblems}</div>
           <span className="text-xs text-gray-400 font-medium mt-0.5 block">LeetCode Solved</span>
         </div>
-        <div className="bg-[#3A2A22] border border-white/[0.08] rounded-2xl p-4 text-center">
-          <div className="text-2xl font-extrabold text-[#91A889]">{profile.stats.githubRepos}</div>
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-4 text-center">
+          <div className="text-2xl font-extrabold text-[#7ED6A5]">{profile.stats.githubRepos}</div>
           <span className="text-xs text-gray-400 font-medium mt-0.5 block">GitHub Repos</span>
         </div>
-        <div className="bg-[#3A2A22] border border-white/[0.08] rounded-2xl p-4 text-center">
-          <div className="text-2xl font-extrabold text-[#D6A05A]">{profile.stats.streakDays} Days</div>
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-4 text-center">
+          <div className="text-2xl font-extrabold text-[#F4B860]">{profile.stats.streakDays} Days</div>
           <span className="text-xs text-gray-400 font-medium mt-0.5 block">Current Streak</span>
         </div>
-        <div className="bg-[#3A2A22] border border-white/[0.08] rounded-2xl p-4 text-center">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-4 text-center">
           <div className="text-2xl font-extrabold text-white">{profile.stats.projectsCount}</div>
           <span className="text-xs text-gray-400 font-medium mt-0.5 block">Full Stack Projects</span>
         </div>

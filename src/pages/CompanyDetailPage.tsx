@@ -46,10 +46,10 @@ export const CompanyDetailPage: React.FC = () => {
 
   if (!company) {
     return (
-      <div className="bg-[#3A2A22] border border-white/[0.08] rounded-2xl p-12 text-center space-y-4">
+      <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-12 text-center space-y-4">
         <h2 className="text-lg font-bold text-white">Company Not Found</h2>
         <p className="text-xs text-gray-400">The company profile requested could not be located.</p>
-        <Link to="/companies" className="text-xs bg-[#C56A4A] text-white px-4 py-2 rounded-xl inline-block">
+        <Link to="/companies" className="text-xs bg-[#2E9D6B] text-white px-4 py-2 rounded-xl inline-block">
           Back to Companies
         </Link>
       </div>
@@ -68,9 +68,9 @@ export const CompanyDetailPage: React.FC = () => {
       </button>
 
       {/* Main Header Banner */}
-      <div className="bg-[#3A2A22] border border-white/[0.08] rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div className="flex items-start gap-4">
-          <div className="w-16 h-16 rounded-2xl bg-[#2A1E18] border border-white/[0.1] flex items-center justify-center font-extrabold text-2xl text-white shadow-xl">
+          <div className="w-16 h-16 rounded-2xl bg-[#171B1F] border border-white/[0.1] flex items-center justify-center font-extrabold text-2xl text-white shadow-xl">
             {company.logo}
           </div>
           <div>
@@ -99,15 +99,15 @@ export const CompanyDetailPage: React.FC = () => {
         </div>
 
         {/* Big Readiness Score */}
-        <div className="bg-[#2A1E18] border border-white/[0.08] rounded-2xl p-5 flex flex-col items-center justify-center min-w-[180px] text-center">
+        <div className="bg-[#171B1F] border border-white/[0.08] rounded-2xl p-5 flex flex-col items-center justify-center min-w-[180px] text-center">
           <span className="text-xs font-bold uppercase tracking-wider text-gray-400">
             Your Readiness
           </span>
-          <div className="text-4xl sm:text-5xl font-extrabold text-[#C56A4A] my-1 tracking-tight">
+          <div className="text-4xl sm:text-5xl font-extrabold text-[#2E9D6B] my-1 tracking-tight">
             {company.readiness}%
           </div>
           <span
-            className={`text-xs font-semibold px-2.5 py-0.5 rounded-full ${company.status === 'Strong Match' ? 'bg-[#91A889]/10 text-[#91A889]' : company.status === 'Good Match' ? 'bg-[#C56A4A]/10 text-[#C56A4A]' : 'bg-[#D6A05A]/10 text-[#D6A05A]'}`}
+            className={`text-xs font-semibold px-2.5 py-0.5 rounded-full ${company.status === 'Strong Match' ? 'bg-[#7ED6A5]/10 text-[#7ED6A5]' : company.status === 'Good Match' ? 'bg-[#2E9D6B]/10 text-[#2E9D6B]' : 'bg-[#F4B860]/10 text-[#F4B860]'}`}
           >
             {company.status}
           </span>
@@ -117,9 +117,9 @@ export const CompanyDetailPage: React.FC = () => {
       {/* Two Column Breakdown: What You Have vs What You Are Missing */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* What You Already Have */}
-        <div className="bg-[#3A2A22] border border-teal-500/20 rounded-2xl p-6 space-y-4">
+        <div className="bg-[#232A30] border border-teal-500/20 rounded-2xl p-6 space-y-4">
           <div className="flex items-center gap-2 pb-3 border-b border-white/[0.06]">
-            <CheckCircle2 className="w-5 h-5 text-[#91A889]" />
+            <CheckCircle2 className="w-5 h-5 text-[#7ED6A5]" />
             <div>
               <h3 className="text-base font-bold text-white">What You Already Have</h3>
               <p className="text-xs text-gray-400">Skills meeting {company.name}'s qualifying baseline</p>
@@ -130,13 +130,13 @@ export const CompanyDetailPage: React.FC = () => {
             {company.skillsMatched.map((skill, i) => (
               <div
                 key={i}
-                className="bg-[#2A1E18] border border-white/[0.06] p-3 rounded-xl flex items-center justify-between text-xs"
+                className="bg-[#171B1F] border border-white/[0.06] p-3 rounded-xl flex items-center justify-between text-xs"
               >
                 <div className="flex items-center gap-2.5 font-medium text-gray-200">
-                  <span className="text-[#91A889] font-bold">?</span>
+                  <span className="text-[#7ED6A5] font-bold">?</span>
                   <span>{skill}</span>
                 </div>
-                <span className="text-[11px] text-[#91A889] font-semibold bg-[#91A889]/10 px-2 py-0.5 rounded">
+                <span className="text-[11px] text-[#7ED6A5] font-semibold bg-[#7ED6A5]/10 px-2 py-0.5 rounded">
                   Cleared
                 </span>
               </div>
@@ -145,9 +145,9 @@ export const CompanyDetailPage: React.FC = () => {
         </div>
 
         {/* What You're Missing */}
-        <div className="bg-[#3A2A22] border border-amber-500/20 rounded-2xl p-6 space-y-4">
+        <div className="bg-[#232A30] border border-amber-500/20 rounded-2xl p-6 space-y-4">
           <div className="flex items-center gap-2 pb-3 border-b border-white/[0.06]">
-            <AlertTriangle className="w-5 h-5 text-[#D6A05A]" />
+            <AlertTriangle className="w-5 h-5 text-[#F4B860]" />
             <div>
               <h3 className="text-base font-bold text-white">What You're Missing</h3>
               <p className="text-xs text-gray-400">High-leverage gaps preventing an offer clearance</p>
@@ -158,13 +158,13 @@ export const CompanyDetailPage: React.FC = () => {
             {company.missingSkills.map((skill, i) => (
               <div
                 key={i}
-                className="bg-[#2A1E18] border border-amber-500/20 p-3 rounded-xl flex items-center justify-between text-xs"
+                className="bg-[#171B1F] border border-amber-500/20 p-3 rounded-xl flex items-center justify-between text-xs"
               >
                 <div className="flex items-center gap-2.5 font-medium text-gray-200">
-                  <span className="text-[#D6A05A] font-bold">?</span>
+                  <span className="text-[#F4B860] font-bold">?</span>
                   <span>{skill}</span>
                 </div>
-                <span className="text-[11px] text-[#D6A05A] font-semibold bg-amber-500/10 px-2 py-0.5 rounded">
+                <span className="text-[11px] text-[#F4B860] font-semibold bg-amber-500/10 px-2 py-0.5 rounded">
                   Action Required
                 </span>
               </div>
@@ -174,10 +174,10 @@ export const CompanyDetailPage: React.FC = () => {
       </div>
 
       {/* Recommended Preparation Sequence */}
-      <div className="bg-gradient-to-br from-[#3A2A22] to-[#3D2B22] border border-[#C56A4A]/30 rounded-2xl p-6 sm:p-8 space-y-5 shadow-xl">
+      <div className="bg-gradient-to-br from-[#232A30] to-[#29333A] border border-[#2E9D6B]/30 rounded-2xl p-6 sm:p-8 space-y-5 shadow-xl">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <div className="p-1.5 rounded-lg bg-[#C56A4A]/20 text-[#C56A4A]">
+            <div className="p-1.5 rounded-lg bg-[#2E9D6B]/20 text-[#2E9D6B]">
               <Sparkles className="w-5 h-5" />
             </div>
             <div>
@@ -195,10 +195,10 @@ export const CompanyDetailPage: React.FC = () => {
           {company.recommendedPreparation.map((step, i) => (
             <div
               key={i}
-              className="bg-[#2A1E18]/80 border border-white/[0.08] p-4 rounded-xl flex flex-col justify-between text-xs space-y-3"
+              className="bg-[#171B1F]/80 border border-white/[0.08] p-4 rounded-xl flex flex-col justify-between text-xs space-y-3"
             >
               <div className="space-y-1.5">
-                <span className="text-[#C56A4A] font-bold text-xs uppercase tracking-wider">
+                <span className="text-[#2E9D6B] font-bold text-xs uppercase tracking-wider">
                   Step 0{i + 1}
                 </span>
                 <p className="text-gray-200 leading-relaxed">{step}</p>
@@ -214,8 +214,8 @@ export const CompanyDetailPage: React.FC = () => {
         <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-white/[0.08]">
           <p className="text-xs text-gray-400">
             Completing these steps will boost your readiness score from{' '}
-            <strong className="text-[#D6A05A]">{company.readiness}%</strong> to{' '}
-            <strong className="text-[#91A889]">88%+</strong>.
+            <strong className="text-[#F4B860]">{company.readiness}%</strong> to{' '}
+            <strong className="text-[#7ED6A5]">88%+</strong>.
           </p>
 
           <button
@@ -227,7 +227,7 @@ export const CompanyDetailPage: React.FC = () => {
               );
               navigate('/roadmap');
             }}
-            className="bg-[#C56A4A] hover:bg-[#A94F36] text-white px-6 py-2.5 rounded-xl text-xs font-semibold shadow-lg shadow-indigo-600/30 flex items-center gap-2 transition-all cursor-pointer"
+            className="bg-[#2E9D6B] hover:bg-[#237B53] text-white px-6 py-2.5 rounded-xl text-xs font-semibold shadow-lg shadow-indigo-600/30 flex items-center gap-2 transition-all cursor-pointer"
           >
             <Sparkles className="w-4 h-4" />
             <span>Generate Preparation Plan</span>

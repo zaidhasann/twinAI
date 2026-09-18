@@ -25,10 +25,10 @@ const icons = {
 };
 
 const colors = {
-  success: 'border-[#91A889] text-[#91A889]',
+  success: 'border-[#7ED6A5] text-[#7ED6A5]',
   error: 'border-red-500 text-red-400',
-  warning: 'border-[#D6A05A] text-[#D6A05A]',
-  info: 'border-[#C56A4A] text-[#C56A4A]',
+  warning: 'border-[#F4B860] text-[#F4B860]',
+  info: 'border-[#2E9D6B] text-[#2E9D6B]',
 };
 
 export function ToastProvider({ children }: { children: React.ReactNode }) {
@@ -62,7 +62,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
           return (
             <div
               key={toast.id}
-              className={`pointer-events-auto flex items-center gap-3 bg-[#3A2A22] border ${colors[toast.type]} rounded-xl px-4 py-3 shadow-2xl min-w-[260px] max-w-sm animate-fade-in`}
+              className={`pointer-events-auto flex items-center gap-3 bg-[#232A30] border ${colors[toast.type]} rounded-xl px-4 py-3 shadow-2xl min-w-[260px] max-w-sm animate-fade-in`}
             >
               <Icon className="w-4 h-4 shrink-0" />
               <p className="text-sm text-white flex-1">{toast.message}</p>

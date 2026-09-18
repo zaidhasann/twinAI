@@ -34,7 +34,7 @@ export const PracticePage: React.FC = () => {
       {/* Header */}
       <div>
         <div className="flex items-center gap-2 mb-1">
-          <span className="p-1.5 rounded-lg bg-[#C56A4A]/10 border border-indigo-500/20 text-[#C56A4A]">
+          <span className="p-1.5 rounded-lg bg-[#2E9D6B]/10 border border-indigo-500/20 text-[#2E9D6B]">
             <Code2 className="w-4 h-4" />
           </span>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
@@ -47,11 +47,11 @@ export const PracticePage: React.FC = () => {
       </div>
 
       {/* Section 1: Recommended For You */}
-      <div className="bg-gradient-to-br from-[#3A2A22] to-[#3D2B22] border border-[#C56A4A]/30 rounded-2xl p-6 sm:p-7 space-y-4 shadow-xl">
+      <div className="bg-gradient-to-br from-[#232A30] to-[#29333A] border border-[#2E9D6B]/30 rounded-2xl p-6 sm:p-7 space-y-4 shadow-xl">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
             <div className="flex items-center gap-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#C56A4A]">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#2E9D6B]">
                 ? Top Recommendation Today
               </span>
               <span className="text-[10px] bg-indigo-500/15 text-indigo-300 px-2 py-0.5 rounded-full border border-indigo-500/30">
@@ -66,21 +66,21 @@ export const PracticePage: React.FC = () => {
 
           <button
             onClick={() => handleStartTask('Binary Trees', 'DSA')}
-            className="bg-[#C56A4A] hover:bg-[#A94F36] text-white text-xs font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-indigo-600/30 flex items-center gap-2 transition-all cursor-pointer self-start sm:self-auto"
+            className="bg-[#2E9D6B] hover:bg-[#237B53] text-white text-xs font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-indigo-600/30 flex items-center gap-2 transition-all cursor-pointer self-start sm:self-auto"
           >
             <span>Solve Problems</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>
 
-        <div className="bg-[#2A1E18]/80 border border-white/[0.08] p-4 rounded-xl text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div className="bg-[#171B1F]/80 border border-white/[0.08] p-4 rounded-xl text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
             <span className="text-gray-400 block text-[11px]">Reason for this recommendation:</span>
             <span className="text-white font-medium">
               High priority for your target companies (Microsoft, Accenture). You answered 1 tree question incorrectly in your recent test.
             </span>
           </div>
-          <span className="text-[#91A889] font-semibold text-xs shrink-0">+6% Potential DSA Boost</span>
+          <span className="text-[#7ED6A5] font-semibold text-xs shrink-0">+6% Potential DSA Boost</span>
         </div>
 
         {/* 3 Specific curated tree questions */}
@@ -94,7 +94,7 @@ export const PracticePage: React.FC = () => {
             return (
               <div
                 key={prob.id}
-                className={`p-3 rounded-xl border transition-all flex flex-col justify-between gap-2 ${isDone ? 'border-[#91A889]/40 bg-[#91A889]/5' : 'border-white/[0.08] bg-[#2A1E18]/60'}`}
+                className={`p-3 rounded-xl border transition-all flex flex-col justify-between gap-2 ${isDone ? 'border-[#7ED6A5]/40 bg-[#7ED6A5]/5' : 'border-white/[0.08] bg-[#171B1F]/60'}`}
               >
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-1">
@@ -103,7 +103,7 @@ export const PracticePage: React.FC = () => {
                     </span>
                     <button
                       onClick={() => toggleProblem(prob.id, prob.name)}
-                      className={`text-xs cursor-pointer ${isDone ? 'text-[#91A889]' : 'text-indigo-300'}`}
+                      className={`text-xs cursor-pointer ${isDone ? 'text-[#7ED6A5]' : 'text-indigo-300'}`}
                     >
                       {isDone ? '? Solved' : 'Mark Done'}
                     </button>
@@ -122,14 +122,14 @@ export const PracticePage: React.FC = () => {
       {/* Two Columns: Skill Gap Practice & Interview Practice */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Skill Gap Practice: System Design */}
-        <div className="bg-[#3A2A22] border border-white/[0.08] rounded-2xl p-6 flex flex-col justify-between space-y-4">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-6 flex flex-col justify-between space-y-4">
           <div>
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center gap-2">
-                <BookOpen className="w-4 h-4 text-[#D6A05A]" />
+                <BookOpen className="w-4 h-4 text-[#F4B860]" />
                 <h3 className="text-base font-bold text-white">Skill Gap Practice</h3>
               </div>
-              <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-500/10 text-[#D6A05A] border border-amber-500/20">
+              <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-500/10 text-[#F4B860] border border-amber-500/20">
                 -27% Gap
               </span>
             </div>
@@ -147,7 +147,7 @@ export const PracticePage: React.FC = () => {
                 'Message Queues & Event Streaming with Kafka',
                 'Rate Limiting Algorithms (Token Bucket)'
               ].map((topic, i) => (
-                <div key={i} className="flex items-center justify-between p-2.5 rounded-xl bg-[#2A1E18] border border-white/[0.04]">
+                <div key={i} className="flex items-center justify-between p-2.5 rounded-xl bg-[#171B1F] border border-white/[0.04]">
                   <span className="text-gray-300">{topic}</span>
                   <span className="text-[10px] text-gray-500">20 min</span>
                 </div>
@@ -168,14 +168,14 @@ export const PracticePage: React.FC = () => {
         </div>
 
         {/* Interview Practice: Behavioral & Situational */}
-        <div className="bg-[#3A2A22] border border-white/[0.08] rounded-2xl p-6 flex flex-col justify-between space-y-4">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-6 flex flex-col justify-between space-y-4">
           <div>
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center gap-2">
-                <Mic className="w-4 h-4 text-[#91A889]" />
+                <Mic className="w-4 h-4 text-[#7ED6A5]" />
                 <h3 className="text-base font-bold text-white">Interview Practice</h3>
               </div>
-              <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-teal-500/10 text-[#91A889] border border-teal-500/20">
+              <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-teal-500/10 text-[#7ED6A5] border border-teal-500/20">
                 Behavioral
               </span>
             </div>
@@ -193,8 +193,8 @@ export const PracticePage: React.FC = () => {
                 'Why are you targeting an SDE role at our organization?',
                 'Give an example of how you prioritized features when time was constrained.'
               ].map((q, i) => (
-                <div key={i} className="p-2.5 rounded-xl bg-[#2A1E18] border border-white/[0.04] text-gray-300 leading-relaxed">
-                  <span className="text-[#C56A4A] font-bold mr-1.5">Q0{i+1}.</span>
+                <div key={i} className="p-2.5 rounded-xl bg-[#171B1F] border border-white/[0.04] text-gray-300 leading-relaxed">
+                  <span className="text-[#2E9D6B] font-bold mr-1.5">Q0{i+1}.</span>
                   {q}
                 </div>
               ))}
@@ -205,7 +205,7 @@ export const PracticePage: React.FC = () => {
             <span className="text-xs text-gray-400">AI Voice & Text Coach</span>
             <button
               onClick={() => handleStartTask('Behavioral Questions', 'Interview')}
-              className="bg-[#C56A4A] hover:bg-[#A94F36] text-white text-xs font-semibold px-4 py-2 rounded-xl flex items-center gap-1.5 transition-colors cursor-pointer"
+              className="bg-[#2E9D6B] hover:bg-[#237B53] text-white text-xs font-semibold px-4 py-2 rounded-xl flex items-center gap-1.5 transition-colors cursor-pointer"
             >
               <span>Practice Questions</span>
               <ArrowRight className="w-3 h-3" />

@@ -22,9 +22,9 @@ export const LandingPage: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-[#2A1E18] text-gray-100 flex flex-col antialiased selection:bg-[#C56A4A] selection:text-white">
+    <div className="min-h-screen bg-[#171B1F] text-gray-100 flex flex-col antialiased selection:bg-[#8B6FC7] selection:text-white">
       {/* Landing Navbar */}
-      <header className="h-20 border-b border-white/[0.08] bg-[#2A1E18]/80 backdrop-blur-md sticky top-0 z-50 px-6 sm:px-12 flex items-center justify-between">
+      <header className="h-20 border-b border-white/[0.08] bg-[#171B1F]/80 backdrop-blur-md sticky top-0 z-50 px-6 sm:px-12 flex items-center justify-between">
         <Link to="/">
           <Logo size="lg" showTagline={true} />
         </Link>
@@ -44,7 +44,7 @@ export const LandingPage: React.FC = () => {
           </Link>
           <Link
             to="/dashboard"
-            className="bg-[#C56A4A] hover:bg-[#A94F36] text-white text-xs font-semibold px-4 py-2.5 rounded-xl shadow-lg shadow-indigo-600/30 flex items-center gap-1.5 transition-all"
+            className="bg-[#8B6FC7] hover:bg-[#7357AB] text-white text-xs font-semibold px-4 py-2.5 rounded-xl shadow-lg shadow-indigo-600/30 flex items-center gap-1.5 transition-all"
           >
             <span>Launch Dashboard</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -55,17 +55,17 @@ export const LandingPage: React.FC = () => {
       {/* Hero Section */}
       <section className="relative pt-20 pb-28 px-6 sm:px-12 max-w-7xl mx-auto flex flex-col items-center text-center overflow-hidden">
         {/* Ambient background glow */}
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-[#C56A4A]/15 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-[#8B6FC7]/15 rounded-full blur-[120px] pointer-events-none" />
 
         {/* Top Announcement Pill */}
-        <div className="inline-flex items-center gap-2 bg-[#3A2A22] border border-[#C56A4A]/40 px-3.5 py-1.5 rounded-full text-xs font-medium text-gray-300 mb-6 shadow-md shadow-indigo-950/40 animate-in fade-in slide-in-from-top-4">
-          <span className="w-2 h-2 rounded-full bg-[#91A889] animate-ping" />
+        <div className="inline-flex items-center gap-2 bg-[#232A30] border border-[#8B6FC7]/40 px-3.5 py-1.5 rounded-full text-xs font-medium text-gray-300 mb-6 shadow-md shadow-indigo-950/40 animate-in fade-in slide-in-from-top-4">
+          <span className="w-2 h-2 rounded-full bg-[#7ED6A5] animate-ping" />
           <span>Know where you are. Know what to do next.</span>
         </div>
 
         {/* Headline */}
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white tracking-tight max-w-4xl leading-[1.1]">
-          Meet Your <span className="bg-gradient-to-r from-[#C56A4A] via-indigo-400 to-[#91A889] bg-clip-text text-transparent">AI Career Twin</span>.
+          Meet Your <span className="bg-gradient-to-r from-[#8B6FC7] via-indigo-400 to-[#7ED6A5] bg-clip-text text-transparent">AI Career Twin</span>.
         </h1>
 
         {/* Subheading */}
@@ -77,7 +77,7 @@ export const LandingPage: React.FC = () => {
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-8 w-full sm:w-auto">
           <Link
             to="/dashboard"
-            className="w-full sm:w-auto bg-[#C56A4A] hover:bg-[#A94F36] text-white px-8 py-3.5 rounded-xl text-sm font-bold shadow-xl shadow-indigo-600/30 flex items-center justify-center gap-2 transition-all hover:scale-105 cursor-pointer"
+            className="w-full sm:w-auto bg-[#8B6FC7] hover:bg-[#7357AB] text-white px-8 py-3.5 rounded-xl text-sm font-bold shadow-xl shadow-indigo-600/30 flex items-center justify-center gap-2 transition-all hover:scale-105 cursor-pointer"
           >
             <Sparkles className="w-4 h-4" />
             <span>Build My Career Twin</span>
@@ -92,7 +92,7 @@ export const LandingPage: React.FC = () => {
         </div>
 
         {/* Realistic Dashboard Preview Frame */}
-        <div id="preview" className="w-full mt-16 rounded-2xl border border-white/[0.12] bg-[#3A2A22] shadow-2xl shadow-black/80 p-4 sm:p-6 text-left relative overflow-hidden">
+        <div id="preview" className="w-full mt-16 rounded-2xl border border-white/[0.12] bg-[#232A30] shadow-2xl shadow-black/80 p-4 sm:p-6 text-left relative overflow-hidden">
           <div className="flex items-center justify-between pb-4 border-b border-white/[0.08] mb-6 text-xs text-gray-400">
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 rounded-full bg-red-500/60" />
@@ -100,24 +100,24 @@ export const LandingPage: React.FC = () => {
               <div className="w-3 h-3 rounded-full bg-teal-500/60" />
               <span className="ml-3 text-gray-400 font-mono text-[11px]">app.twinai.careers/overview</span>
             </div>
-            <span className="text-[11px] bg-[#C56A4A]/10 text-indigo-300 px-2 py-0.5 rounded-md border border-indigo-500/20">
+            <span className="text-[11px] bg-[#8B6FC7]/10 text-indigo-300 px-2 py-0.5 rounded-md border border-indigo-500/20">
               Live Interactive Prototype
             </span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-            <div className="md:col-span-4 bg-[#2A1E18] p-4 rounded-xl border border-white/[0.06]">
+            <div className="md:col-span-4 bg-[#171B1F] p-4 rounded-xl border border-white/[0.06]">
               <span className="text-[10px] uppercase font-bold text-gray-500 block">Placement Readiness</span>
               <div className="text-3xl font-extrabold text-white mt-1">78%</div>
-              <span className="text-xs text-[#91A889] font-semibold">? 6% from last month</span>
+              <span className="text-xs text-[#7ED6A5] font-semibold">? 6% from last month</span>
               <div className="w-full bg-gray-800 h-1.5 rounded-full mt-3 overflow-hidden">
-                <div className="bg-[#C56A4A] h-full rounded-full w-[78%]" />
+                <div className="bg-[#8B6FC7] h-full rounded-full w-[78%]" />
               </div>
             </div>
 
-            <div className="md:col-span-8 bg-[#2A1E18] p-4 rounded-xl border border-[#C56A4A]/30 flex flex-col justify-between">
+            <div className="md:col-span-8 bg-[#171B1F] p-4 rounded-xl border border-[#8B6FC7]/30 flex flex-col justify-between">
               <div>
-                <span className="text-[10px] uppercase font-bold text-[#C56A4A] flex items-center gap-1.5">
+                <span className="text-[10px] uppercase font-bold text-[#8B6FC7] flex items-center gap-1.5">
                   <Sparkles className="w-3.5 h-3.5" />
                   ? AI Career Insight
                 </span>
@@ -126,7 +126,7 @@ export const LandingPage: React.FC = () => {
                 </p>
               </div>
               <div className="flex items-center justify-between pt-3 mt-2 border-t border-white/[0.06] text-xs">
-                <span className="text-[#D6A05A] font-semibold">3 high-impact gaps identified</span>
+                <span className="text-[#F4B860] font-semibold">3 high-impact gaps identified</span>
                 <Link to="/dashboard" className="text-indigo-400 hover:text-indigo-300 font-medium">
                   Explore Demo ?
                 </Link>
@@ -137,10 +137,10 @@ export const LandingPage: React.FC = () => {
       </section>
 
       {/* SECTION 7: LANDING PAGE — HOW IT WORKS (Four Steps using the Four Brand Colors) */}
-      <section id="how-it-works" className="py-24 px-6 sm:px-12 border-t border-white/[0.08] bg-[#2A1E18]">
+      <section id="how-it-works" className="py-24 px-6 sm:px-12 border-t border-white/[0.08] bg-[#171B1F]">
         <div className="max-w-7xl mx-auto space-y-12">
           <div className="text-center max-w-2xl mx-auto space-y-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#C56A4A]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#8B6FC7]">
               Four-Phase Career Synthesis
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
@@ -153,7 +153,7 @@ export const LandingPage: React.FC = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Step 01 - Deep Navy Card */}
-            <div className="bg-[#2A1E18] border-2 border-white/[0.15] rounded-2xl p-6 flex flex-col justify-between space-y-6 shadow-xl">
+            <div className="bg-[#171B1F] border-2 border-white/[0.15] rounded-2xl p-6 flex flex-col justify-between space-y-6 shadow-xl">
               <div className="space-y-3">
                 <div className="w-10 h-10 rounded-xl bg-white/[0.06] border border-white/[0.1] flex items-center justify-center font-extrabold text-sm text-white">
                   01
@@ -169,9 +169,9 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Step 02 - Electric Indigo Card */}
-            <div className="bg-[#3A2A22] border-2 border-[#C56A4A]/50 rounded-2xl p-6 flex flex-col justify-between space-y-6 shadow-xl shadow-indigo-950/30">
+            <div className="bg-[#232A30] border-2 border-[#8B6FC7]/50 rounded-2xl p-6 flex flex-col justify-between space-y-6 shadow-xl shadow-indigo-950/30">
               <div className="space-y-3">
-                <div className="w-10 h-10 rounded-xl bg-[#C56A4A]/20 border border-[#C56A4A]/50 flex items-center justify-center font-extrabold text-sm text-[#C56A4A]">
+                <div className="w-10 h-10 rounded-xl bg-[#8B6FC7]/20 border border-[#8B6FC7]/50 flex items-center justify-center font-extrabold text-sm text-[#8B6FC7]">
                   02
                 </div>
                 <h3 className="text-lg font-bold text-white">Understand</h3>
@@ -179,15 +179,15 @@ export const LandingPage: React.FC = () => {
                   TwinAI builds an evolving digital representation of your skills, code quality, and interview preparedness.
                 </p>
               </div>
-              <span className="text-[10px] uppercase font-bold text-[#C56A4A] tracking-wider">
+              <span className="text-[10px] uppercase font-bold text-[#8B6FC7] tracking-wider">
                 Step 02 • Digital Twin
               </span>
             </div>
 
             {/* Step 03 - Amber Card */}
-            <div className="bg-[#3A2A22] border-2 border-[#D6A05A]/50 rounded-2xl p-6 flex flex-col justify-between space-y-6 shadow-xl shadow-amber-950/20">
+            <div className="bg-[#232A30] border-2 border-[#F4B860]/50 rounded-2xl p-6 flex flex-col justify-between space-y-6 shadow-xl shadow-amber-950/20">
               <div className="space-y-3">
-                <div className="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/50 flex items-center justify-center font-extrabold text-sm text-[#D6A05A]">
+                <div className="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/50 flex items-center justify-center font-extrabold text-sm text-[#F4B860]">
                   03
                 </div>
                 <h3 className="text-lg font-bold text-white">Improve</h3>
@@ -195,15 +195,15 @@ export const LandingPage: React.FC = () => {
                   Get personalized recommendations, skill gap closures, and an actionable daily preparation plan.
                 </p>
               </div>
-              <span className="text-[10px] uppercase font-bold text-[#D6A05A] tracking-wider">
+              <span className="text-[10px] uppercase font-bold text-[#F4B860] tracking-wider">
                 Step 03 • Actionable Plan
               </span>
             </div>
 
             {/* Step 04 - Teal Card */}
-            <div className="bg-[#3A2A22] border-2 border-[#91A889]/50 rounded-2xl p-6 flex flex-col justify-between space-y-6 shadow-xl shadow-teal-950/20">
+            <div className="bg-[#232A30] border-2 border-[#7ED6A5]/50 rounded-2xl p-6 flex flex-col justify-between space-y-6 shadow-xl shadow-teal-950/20">
               <div className="space-y-3">
-                <div className="w-10 h-10 rounded-xl bg-teal-500/20 border border-teal-500/50 flex items-center justify-center font-extrabold text-sm text-[#91A889]">
+                <div className="w-10 h-10 rounded-xl bg-teal-500/20 border border-teal-500/50 flex items-center justify-center font-extrabold text-sm text-[#7ED6A5]">
                   04
                 </div>
                 <h3 className="text-lg font-bold text-white">Get Placed</h3>
@@ -211,7 +211,7 @@ export const LandingPage: React.FC = () => {
                   Discover companies where your current profile is a strong match, and unlock targeted employer tracks.
                 </p>
               </div>
-              <span className="text-[10px] uppercase font-bold text-[#91A889] tracking-wider">
+              <span className="text-[10px] uppercase font-bold text-[#7ED6A5] tracking-wider">
                 Step 04 • Offer Ready
               </span>
             </div>
@@ -223,7 +223,7 @@ export const LandingPage: React.FC = () => {
       <section id="features" className="py-24 px-6 sm:px-12 border-t border-white/[0.08] bg-[#0d1326]">
         <div className="max-w-7xl mx-auto space-y-12">
           <div className="text-center max-w-2xl mx-auto space-y-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#91A889]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#7ED6A5]">
               Engine Capabilities
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
@@ -236,8 +236,8 @@ export const LandingPage: React.FC = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Feature 1 */}
-            <div className="bg-[#3A2A22] border border-white/[0.08] hover:border-indigo-500/40 p-6 rounded-2xl space-y-3 transition-all group">
-              <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-[#C56A4A]">
+            <div className="bg-[#232A30] border border-white/[0.08] hover:border-indigo-500/40 p-6 rounded-2xl space-y-3 transition-all group">
+              <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-[#8B6FC7]">
                 <Cpu className="w-5 h-5" />
               </div>
               <h3 className="text-base font-bold text-white group-hover:text-indigo-300 transition-colors">
@@ -249,8 +249,8 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Feature 2 */}
-            <div className="bg-[#3A2A22] border border-white/[0.08] hover:border-amber-500/40 p-6 rounded-2xl space-y-3 transition-all group">
-              <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-[#D6A05A]">
+            <div className="bg-[#232A30] border border-white/[0.08] hover:border-amber-500/40 p-6 rounded-2xl space-y-3 transition-all group">
+              <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-[#F4B860]">
                 <Target className="w-5 h-5" />
               </div>
               <h3 className="text-base font-bold text-white group-hover:text-amber-300 transition-colors">
@@ -262,8 +262,8 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Feature 3 */}
-            <div className="bg-[#3A2A22] border border-white/[0.08] hover:border-teal-500/40 p-6 rounded-2xl space-y-3 transition-all group">
-              <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-[#91A889]">
+            <div className="bg-[#232A30] border border-white/[0.08] hover:border-teal-500/40 p-6 rounded-2xl space-y-3 transition-all group">
+              <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-[#7ED6A5]">
                 <CheckCircle2 className="w-5 h-5" />
               </div>
               <h3 className="text-base font-bold text-white group-hover:text-teal-300 transition-colors">
@@ -275,8 +275,8 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Feature 4 */}
-            <div className="bg-[#3A2A22] border border-white/[0.08] hover:border-indigo-500/40 p-6 rounded-2xl space-y-3 transition-all group">
-              <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-[#C56A4A]">
+            <div className="bg-[#232A30] border border-white/[0.08] hover:border-indigo-500/40 p-6 rounded-2xl space-y-3 transition-all group">
+              <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-[#8B6FC7]">
                 <Building2 className="w-5 h-5" />
               </div>
               <h3 className="text-base font-bold text-white group-hover:text-indigo-300 transition-colors">
@@ -288,8 +288,8 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Feature 5 */}
-            <div className="bg-[#3A2A22] border border-white/[0.08] hover:border-teal-500/40 p-6 rounded-2xl space-y-3 transition-all group">
-              <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-[#91A889]">
+            <div className="bg-[#232A30] border border-white/[0.08] hover:border-teal-500/40 p-6 rounded-2xl space-y-3 transition-all group">
+              <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-[#7ED6A5]">
                 <Milestone className="w-5 h-5" />
               </div>
               <h3 className="text-base font-bold text-white group-hover:text-teal-300 transition-colors">
@@ -301,8 +301,8 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Feature 6 */}
-            <div className="bg-[#3A2A22] border border-white/[0.08] hover:border-amber-500/40 p-6 rounded-2xl space-y-3 transition-all group">
-              <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-[#D6A05A]">
+            <div className="bg-[#232A30] border border-white/[0.08] hover:border-amber-500/40 p-6 rounded-2xl space-y-3 transition-all group">
+              <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-[#F4B860]">
                 <Mic className="w-5 h-5" />
               </div>
               <h3 className="text-base font-bold text-white group-hover:text-amber-300 transition-colors">
@@ -314,8 +314,8 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Feature 7 */}
-            <div className="bg-[#3A2A22] border border-white/[0.08] hover:border-indigo-500/40 p-6 rounded-2xl space-y-3 transition-all group">
-              <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-[#C56A4A]">
+            <div className="bg-[#232A30] border border-white/[0.08] hover:border-indigo-500/40 p-6 rounded-2xl space-y-3 transition-all group">
+              <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-[#8B6FC7]">
                 <FileCheck className="w-5 h-5" />
               </div>
               <h3 className="text-base font-bold text-white group-hover:text-indigo-300 transition-colors">
@@ -327,8 +327,8 @@ export const LandingPage: React.FC = () => {
             </div>
 
             {/* Feature 8 */}
-            <div className="bg-[#3A2A22] border border-white/[0.08] hover:border-teal-500/40 p-6 rounded-2xl space-y-3 transition-all group">
-              <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-[#91A889]">
+            <div className="bg-[#232A30] border border-white/[0.08] hover:border-teal-500/40 p-6 rounded-2xl space-y-3 transition-all group">
+              <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-[#7ED6A5]">
                 <TrendingUp className="w-5 h-5" />
               </div>
               <h3 className="text-base font-bold text-white group-hover:text-teal-300 transition-colors">
@@ -343,7 +343,7 @@ export const LandingPage: React.FC = () => {
       </section>
 
       {/* Call To Action Footer */}
-      <section className="py-20 px-6 sm:px-12 border-t border-white/[0.08] bg-[#2A1E18] text-center">
+      <section className="py-20 px-6 sm:px-12 border-t border-white/[0.08] bg-[#171B1F] text-center">
         <div className="max-w-3xl mx-auto space-y-6">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Ready to meet your Career Twin?
@@ -354,7 +354,7 @@ export const LandingPage: React.FC = () => {
           <div>
             <Link
               to="/dashboard"
-              className="inline-flex items-center gap-2 bg-[#C56A4A] hover:bg-[#A94F36] text-white px-8 py-3.5 rounded-xl text-sm font-bold shadow-xl shadow-indigo-600/30 transition-all hover:scale-105"
+              className="inline-flex items-center gap-2 bg-[#8B6FC7] hover:bg-[#7357AB] text-white px-8 py-3.5 rounded-xl text-sm font-bold shadow-xl shadow-indigo-600/30 transition-all hover:scale-105"
             >
               <span>Launch TwinAI Experience</span>
               <ArrowRight className="w-4 h-4" />
@@ -364,7 +364,7 @@ export const LandingPage: React.FC = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-6 sm:px-12 border-t border-white/[0.05] bg-[#2A1E18] text-xs text-gray-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <footer className="py-8 px-6 sm:px-12 border-t border-white/[0.05] bg-[#171B1F] text-xs text-gray-500 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <Logo size="sm" />
           <span>© 2026 TwinAI Technologies Inc. All rights reserved.</span>

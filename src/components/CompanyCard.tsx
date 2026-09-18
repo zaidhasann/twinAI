@@ -10,15 +10,15 @@ interface CompanyCardProps {
 export function CompanyCard({ company, onClick }: CompanyCardProps) {
   const matchColor =
     company.readiness >= 80
-      ? '#91A889'
+      ? '#7ED6A5'
       : company.readiness >= 60
-      ? '#D6A05A'
-      : '#EF4444';
+      ? '#F4B860'
+      : '#FF8066';
 
   return (
     <div
       onClick={onClick}
-      className="bg-[#3A2A22] border border-white/[0.06] rounded-2xl p-5 hover:border-white/[0.12] hover:bg-[#4A352B] transition-all cursor-pointer group"
+      className="bg-[#232A30] border border-white/[0.06] rounded-2xl p-5 hover:border-white/[0.12] hover:bg-[#2D353B] transition-all cursor-pointer group"
     >
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
@@ -31,7 +31,7 @@ export function CompanyCard({ company, onClick }: CompanyCardProps) {
             )}
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-white group-hover:text-[#C56A4A] transition-colors">
+            <h3 className="text-sm font-semibold text-white group-hover:text-[#2E9D6B] transition-colors">
               {company.name}
             </h3>
             <p className="text-xs text-gray-400">{company.role}</p>
@@ -62,7 +62,7 @@ export function CompanyCard({ company, onClick }: CompanyCardProps) {
         {[company.role].map(role => (
           <span
             key={role}
-            className="text-[10px] px-2 py-0.5 bg-[#C56A4A]/10 text-[#E8A58D] rounded-full border border-[#C56A4A]/20"
+            className="text-[10px] px-2 py-0.5 bg-[#2E9D6B]/10 text-[#BFEAD4] rounded-full border border-[#2E9D6B]/20"
           >
             {role}
           </span>

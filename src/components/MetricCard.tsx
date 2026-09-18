@@ -25,7 +25,7 @@ export function MetricCard({
   change,
   delta,
   icon,
-  color = '#C56A4A',
+  color = '#2E9D6B',
   subtitle,
   progress,
 }: MetricCardProps) {
@@ -33,7 +33,7 @@ export function MetricCard({
   const isNegative = change !== undefined && change < 0;
 
   return (
-    <div className="bg-[#3A2A22] border border-white/[0.06] rounded-2xl p-5 hover:border-white/[0.12] transition-all group">
+    <div className="bg-[#232A30] border border-white/[0.06] rounded-2xl p-5 hover:border-white/[0.12] transition-all group">
       <div className="flex items-start justify-between mb-3">
         <div className="flex items-center gap-2">
           {icon && (
@@ -47,7 +47,7 @@ export function MetricCard({
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wider">{label ?? title}</p>
         </div>
         {change !== undefined && (
-          <div className={`flex items-center gap-1 text-xs font-medium ${isPositive ? 'text-[#91A889]' : isNegative ? 'text-red-400' : 'text-gray-400'}`}>
+          <div className={`flex items-center gap-1 text-xs font-medium ${isPositive ? 'text-[#7ED6A5]' : isNegative ? 'text-red-400' : 'text-gray-400'}`}>
             {isPositive ? <TrendingUp className="w-3.5 h-3.5" /> : isNegative ? <TrendingDown className="w-3.5 h-3.5" /> : <Minus className="w-3.5 h-3.5" />}
             {Math.abs(change)}%
           </div>

@@ -27,9 +27,10 @@ const BOTTOM_ITEMS = [
 interface SidebarProps {
   collapsed: boolean;
   onToggle: () => void;
+  mobileOpen?: boolean;
 }
 
-export function Sidebar({ collapsed, onToggle }: SidebarProps) {
+export function Sidebar({ collapsed, onToggle, mobileOpen = false }: SidebarProps) {
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -37,26 +38,29 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
     const active = location.pathname === path;
     return (
       <button
-        onClick={() => navigate(path)}
+        onClick={() => {
+          navigate(path);
+          if (mobileOpen) onToggle();
+        }}
         title={collapsed ? label : undefined}
         className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all group relative ${
           active
-            ? 'bg-[#C56A4A]/15 text-white border border-[#C56A4A]/30'
+            ? 'bg-[#8B6FC7]/15 text-white border border-[#8B6FC7]/30'
             : 'text-gray-400 hover:text-white hover:bg-white/[0.05]'
         }`}
       >
-        <Icon className={`w-4.5 h-4.5 shrink-0 ${active ? 'text-[#C56A4A]' : ''}`} />
+        <Icon className={`w-4.5 h-4.5 shrink-0 ${active ? 'text-[#8B6FC7]' : ''}`} />
         {!collapsed && <span className="truncate">{label}</span>}
-        {active && <span className="absolute left-0 top-1/2 -translate-y-1/2 w-0.5 h-5 bg-[#C56A4A] rounded-r-full" />}
+        {active && <span className="absolute left-0 top-1/2 -translate-y-1/2 w-0.5 h-5 bg-[#8B6FC7] rounded-r-full" />}
       </button>
     );
   };
 
   return (
     <aside
-      className={`fixed inset-y-0 left-0 z-40 flex flex-col bg-[#30221C] border-r border-white/[0.06] transition-all duration-300 ${
-        collapsed ? 'w-16' : 'w-60'
-      }`}
+      className={`fixed inset-y-0 left-0 z-40 flex flex-col bg-[#1D2429] border-r border-white/[0.06] transition-all duration-300 ${
+        mobileOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
+      } ${collapsed ? 'w-16' : 'w-60'}`}
     >
       {/* Logo */}
       <div className="h-16 flex items-center justify-between px-4 border-b border-white/[0.06] shrink-0">

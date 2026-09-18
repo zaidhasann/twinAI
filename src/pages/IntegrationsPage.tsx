@@ -66,7 +66,7 @@ export const IntegrationsPage: React.FC = () => {
       {/* Header */}
       <div>
         <div className="flex items-center gap-2 mb-1">
-          <span className="p-1.5 rounded-lg bg-[#C56A4A]/10 border border-indigo-500/20 text-[#C56A4A]">
+          <span className="p-1.5 rounded-lg bg-[#2E9D6B]/10 border border-indigo-500/20 text-[#2E9D6B]">
             <Share2 className="w-4 h-4" />
           </span>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
@@ -83,11 +83,11 @@ export const IntegrationsPage: React.FC = () => {
         {integrations.map((item) => (
           <div
             key={item.id}
-            className="bg-[#3A2A22] border border-white/[0.08] hover:border-white/[0.18] rounded-2xl p-6 flex flex-col justify-between transition-all group"
+            className="bg-[#232A30] border border-white/[0.08] hover:border-white/[0.18] rounded-2xl p-6 flex flex-col justify-between transition-all group"
           >
             <div>
               <div className="flex items-start justify-between gap-3 mb-4">
-                <div className="w-12 h-12 rounded-xl bg-[#2A1E18] border border-white/[0.1] flex items-center justify-center text-white group-hover:text-[#C56A4A] transition-colors shadow-inner">
+                <div className="w-12 h-12 rounded-xl bg-[#171B1F] border border-white/[0.1] flex items-center justify-center text-white group-hover:text-[#2E9D6B] transition-colors shadow-inner">
                   {getIcon(item.icon)}
                 </div>
 

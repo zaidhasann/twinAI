@@ -17,8 +17,8 @@ export function Logo({ size = 'md', showText = true }: LogoProps) {
 
   return (
     <div className="flex items-center gap-2.5">
-      <div className={`${s.container} rounded-xl bg-gradient-to-tr from-[#C56A4A] to-[#91A889] p-px flex items-center justify-center`}>
-        <div className="w-full h-full bg-[#2A1E18] rounded-xl flex items-center justify-center">
+      <div className={`${s.container} rounded-xl bg-gradient-to-tr from-[#8B6FC7] to-[#7ED6A5] p-px flex items-center justify-center`}>
+        <div className="w-full h-full bg-[#171B1F] rounded-xl flex items-center justify-center">
           <svg viewBox="0 0 24 24" className="w-4/6 h-4/6" fill="none">
             <path
               d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
@@ -29,8 +29,8 @@ export function Logo({ size = 'md', showText = true }: LogoProps) {
             />
             <defs>
               <linearGradient id="logoGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#C56A4A" />
-                <stop offset="1" stopColor="#91A889" />
+                <stop stopColor="#8B6FC7" />
+                <stop offset="1" stopColor="#7ED6A5" />
               </linearGradient>
             </defs>
           </svg>
@@ -38,7 +38,7 @@ export function Logo({ size = 'md', showText = true }: LogoProps) {
       </div>
       {showText && (
         <span className={`${s.text} font-bold tracking-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent`}>
-          Twin<span className="text-[#C56A4A]">AI</span>
+          Twin<span className="text-[#8B6FC7]">AI</span>
         </span>
       )}
     </div>

@@ -35,15 +35,15 @@ export const SkillGapPage: React.FC = () => {
     const isHigh = skill.priority === 'high';
     const isMedium = skill.priority === 'medium';
     const badgeColor = isHigh
-      ? 'bg-amber-500/10 text-[#D6A05A] border-amber-500/30'
+      ? 'bg-amber-500/10 text-[#F4B860] border-amber-500/30'
       : isMedium
-      ? 'bg-indigo-500/10 text-[#C56A4A] border-indigo-500/30'
-      : 'bg-teal-500/10 text-[#91A889] border-teal-500/30';
+      ? 'bg-indigo-500/10 text-[#2E9D6B] border-indigo-500/30'
+      : 'bg-teal-500/10 text-[#7ED6A5] border-teal-500/30';
 
     return (
       <div
         key={skill.id}
-        className="bg-[#3A2A22] border border-white/[0.08] hover:border-white/[0.18] rounded-2xl p-6 flex flex-col justify-between transition-all group"
+        className="bg-[#232A30] border border-white/[0.08] hover:border-white/[0.18] rounded-2xl p-6 flex flex-col justify-between transition-all group"
       >
         <div className="space-y-4">
           <div className="flex items-start justify-between gap-4">
@@ -58,28 +58,28 @@ export const SkillGapPage: React.FC = () => {
             </div>
 
             <div className="text-right">
-              <div className="text-2xl font-extrabold text-[#D6A05A] tracking-tight">
+              <div className="text-2xl font-extrabold text-[#F4B860] tracking-tight">
                 -{skill.gap}%
               </div>
               <span className="text-[10px] text-gray-400 font-medium">placement gap</span>
             </div>
           </div>
 
-          <div className="space-y-2 bg-[#2A1E18]/70 p-3.5 rounded-xl border border-white/[0.04]">
+          <div className="space-y-2 bg-[#171B1F]/70 p-3.5 rounded-xl border border-white/[0.04]">
             <div className="flex justify-between text-xs">
               <div className="flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-[#C56A4A]" />
+                <span className="w-2 h-2 rounded-full bg-[#2E9D6B]" />
                 <span className="text-gray-300">Current: <strong className="text-white font-bold">{skill.currentScore}%</strong></span>
               </div>
               <div className="flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-[#91A889]" />
+                <span className="w-2 h-2 rounded-full bg-[#7ED6A5]" />
                 <span className="text-gray-300">Required: <strong className="text-white font-bold">{skill.requiredScore}%</strong></span>
               </div>
             </div>
 
             <div className="relative w-full bg-gray-800 h-2.5 rounded-full overflow-hidden">
               <div className="absolute top-0 bottom-0 bg-white/20 rounded-full z-0" style={{ width: `${skill.requiredScore}%` }} />
-              <div className={`relative h-full rounded-full z-10 transition-all duration-700 ${isHigh ? 'bg-[#D6A05A]' : isMedium ? 'bg-[#C56A4A]' : 'bg-[#91A889]'  }`} style={{ width: `${skill.currentScore}%` }} />
+              <div className={`relative h-full rounded-full z-10 transition-all duration-700 ${isHigh ? 'bg-[#F4B860]' : isMedium ? 'bg-[#2E9D6B]' : 'bg-[#7ED6A5]'  }`} style={{ width: `${skill.currentScore}%` }} />
             </div>
             <div className="text-[11px] text-gray-500 flex justify-between">
               <span>Current Ability</span>
@@ -88,7 +88,7 @@ export const SkillGapPage: React.FC = () => {
           </div>
 
           <div className="bg-amber-500/[0.05] border border-amber-500/20 rounded-xl p-3 text-xs">
-            <span className="font-bold text-[#D6A05A] block mb-1 flex items-center gap-1">
+            <span className="font-bold text-[#F4B860] block mb-1 flex items-center gap-1">
               <AlertTriangle className="w-3.5 h-3.5 shrink-0" />
               What this means for you:
             </span>
@@ -99,7 +99,7 @@ export const SkillGapPage: React.FC = () => {
 
           <div className="space-y-1.5">
             <span className="text-xs font-bold text-gray-300 uppercase tracking-wider flex items-center gap-1.5">
-              <BookOpen className="w-3.5 h-3.5 text-[#91A889]" />
+              <BookOpen className="w-3.5 h-3.5 text-[#7ED6A5]" />
               Recommended Next Step
             </span>
             <p className="text-xs text-gray-300 leading-relaxed">
@@ -128,7 +128,7 @@ export const SkillGapPage: React.FC = () => {
                 'indigo'
               );
             }}
-            className="bg-[#C56A4A] hover:bg-[#A94F36] text-white px-4 py-2 rounded-xl text-xs font-semibold shadow-md shadow-indigo-600/20 flex items-center gap-1.5 transition-all cursor-pointer"
+            className="bg-[#2E9D6B] hover:bg-[#237B53] text-white px-4 py-2 rounded-xl text-xs font-semibold shadow-md shadow-indigo-600/20 flex items-center gap-1.5 transition-all cursor-pointer"
           >
             <span>Start Learning</span>
             <ArrowRight className="w-3 h-3" />
@@ -143,7 +143,7 @@ export const SkillGapPage: React.FC = () => {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2 mb-1">
-            <span className="p-1.5 rounded-lg bg-[#D6A05A]/10 border border-amber-500/20 text-[#D6A05A]">
+            <span className="p-1.5 rounded-lg bg-[#F4B860]/10 border border-amber-500/20 text-[#F4B860]">
               <AlertTriangle className="w-4 h-4" />
             </span>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
@@ -155,12 +155,12 @@ export const SkillGapPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-1 bg-[#3A2A22] border border-white/[0.08] p-1 rounded-xl self-start sm:self-auto">
+        <div className="flex items-center gap-1 bg-[#232A30] border border-white/[0.08] p-1 rounded-xl self-start sm:self-auto">
           {(['all', 'high', 'medium', 'low'] as const).map((filter) => (
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}
-              className={`text-xs px-3 py-1.5 rounded-lg font-medium capitalize transition-colors cursor-pointer ${activeFilter === filter ? 'bg-[#C56A4A] text-white' : 'text-gray-400 hover:text-white'}`}
+              className={`text-xs px-3 py-1.5 rounded-lg font-medium capitalize transition-colors cursor-pointer ${activeFilter === filter ? 'bg-[#2E9D6B] text-white' : 'text-gray-400 hover:text-white'}`}
             >
               {filter === 'all' ? 'All Gaps' : `${filter} Priority`}
             </button>
@@ -169,8 +169,8 @@ export const SkillGapPage: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="bg-[#3A2A22] border border-amber-500/30 rounded-2xl p-5 flex items-center gap-4">
-          <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-[#D6A05A]">
+        <div className="bg-[#232A30] border border-amber-500/30 rounded-2xl p-5 flex items-center gap-4">
+          <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-[#F4B860]">
             <AlertTriangle className="w-6 h-6" />
           </div>
           <div>
@@ -179,8 +179,8 @@ export const SkillGapPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-[#3A2A22] border border-indigo-500/30 rounded-2xl p-5 flex items-center gap-4">
-          <div className="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-[#C56A4A]">
+        <div className="bg-[#232A30] border border-indigo-500/30 rounded-2xl p-5 flex items-center gap-4">
+          <div className="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-[#2E9D6B]">
             <BookOpen className="w-6 h-6" />
           </div>
           <div>
@@ -189,8 +189,8 @@ export const SkillGapPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-[#3A2A22] border border-teal-500/30 rounded-2xl p-5 flex items-center gap-4">
-          <div className="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-[#91A889]">
+        <div className="bg-[#232A30] border border-teal-500/30 rounded-2xl p-5 flex items-center gap-4">
+          <div className="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-[#7ED6A5]">
             <CheckCircle2 className="w-6 h-6" />
           </div>
           <div>

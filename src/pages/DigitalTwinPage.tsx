@@ -47,11 +47,11 @@ export const DigitalTwinPage: React.FC = () => {
   const getStatusColor = (status: DigitalTwinNode['status']) => {
     switch (status) {
       case 'Strong':
-        return 'text-[#91A889] border-teal-500/30 bg-teal-500/10';
+        return 'text-[#7ED6A5] border-teal-500/30 bg-teal-500/10';
       case 'Good':
-        return 'text-[#C56A4A] border-indigo-500/30 bg-indigo-500/10';
+        return 'text-[#8B6FC7] border-indigo-500/30 bg-indigo-500/10';
       case 'Attention':
-        return 'text-[#D6A05A] border-amber-500/30 bg-amber-500/10';
+        return 'text-[#F4B860] border-amber-500/30 bg-amber-500/10';
     }
   };
 
@@ -61,7 +61,7 @@ export const DigitalTwinPage: React.FC = () => {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2 mb-1">
-            <span className="p-1.5 rounded-lg bg-[#C56A4A]/10 border border-indigo-500/20 text-[#C56A4A]">
+            <span className="p-1.5 rounded-lg bg-[#8B6FC7]/10 border border-indigo-500/20 text-[#8B6FC7]">
               <Cpu className="w-4 h-4" />
             </span>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
@@ -76,17 +76,17 @@ export const DigitalTwinPage: React.FC = () => {
         <button
           onClick={handleResync}
           disabled={isSyncing}
-          className="bg-[#3A2A22] border border-white/[0.1] hover:border-indigo-500/40 text-white text-xs font-semibold px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all cursor-pointer shadow-md disabled:opacity-50 self-start sm:self-auto"
+          className="bg-[#232A30] border border-white/[0.1] hover:border-indigo-500/40 text-white text-xs font-semibold px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all cursor-pointer shadow-md disabled:opacity-50 self-start sm:self-auto"
         >
-          <RefreshCw className="w-3.5 h-3.5 text-[#C56A4A]" />
+          <RefreshCw className="w-3.5 h-3.5 text-[#8B6FC7]" />
           <span>{isSyncing ? 'Recalculating Twin Weights...' : 'Sync Career Vector'}</span>
         </button>
       </div>
 
       {/* Twin Confidence & Datapoints Bar */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div className="bg-[#3A2A22] border border-white/[0.08] rounded-2xl p-4 flex items-center gap-3.5">
-          <div className="w-11 h-11 rounded-xl bg-[#C56A4A]/10 border border-indigo-500/20 flex items-center justify-center text-[#C56A4A]">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-4 flex items-center gap-3.5">
+          <div className="w-11 h-11 rounded-xl bg-[#8B6FC7]/10 border border-indigo-500/20 flex items-center justify-center text-[#8B6FC7]">
             <ShieldCheck className="w-5 h-5" />
           </div>
           <div>
@@ -95,8 +95,8 @@ export const DigitalTwinPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-[#3A2A22] border border-white/[0.08] rounded-2xl p-4 flex items-center gap-3.5">
-          <div className="w-11 h-11 rounded-xl bg-[#91A889]/10 border border-teal-500/20 flex items-center justify-center text-[#91A889]">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-4 flex items-center gap-3.5">
+          <div className="w-11 h-11 rounded-xl bg-[#7ED6A5]/10 border border-teal-500/20 flex items-center justify-center text-[#7ED6A5]">
             <Database className="w-5 h-5" />
           </div>
           <div>
@@ -105,8 +105,8 @@ export const DigitalTwinPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-[#3A2A22] border border-white/[0.08] rounded-2xl p-4 flex items-center gap-3.5">
-          <div className="w-11 h-11 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-[#D6A05A]">
+        <div className="bg-[#232A30] border border-white/[0.08] rounded-2xl p-4 flex items-center gap-3.5">
+          <div className="w-11 h-11 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-[#F4B860]">
             <Clock className="w-5 h-5" />
           </div>
           <div>
@@ -119,7 +119,7 @@ export const DigitalTwinPage: React.FC = () => {
       {/* Central Interactive Twin Visualizer */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Visual Graph Panel */}
-        <div className="lg:col-span-8 bg-gradient-to-br from-[#3A2A22] to-[#33251E] border border-white/[0.08] rounded-2xl p-6 sm:p-8 min-h-[440px] relative overflow-hidden flex flex-col justify-between">
+        <div className="lg:col-span-8 bg-gradient-to-br from-[#232A30] to-[#273036] border border-white/[0.08] rounded-2xl p-6 sm:p-8 min-h-[440px] relative overflow-hidden flex flex-col justify-between">
           {/* Subtle neural network grid background lines */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
 
@@ -135,14 +135,14 @@ export const DigitalTwinPage: React.FC = () => {
 
           {/* Central Core Identity Node */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center text-center">
-            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl bg-gradient-to-tr from-[#C56A4A] to-[#91A889] p-[2px] shadow-2xl shadow-indigo-600/30 animate-pulse-subtle">
-              <div className="w-full h-full bg-[#2A1E18] rounded-[22px] flex flex-col items-center justify-center p-2">
-                <Cpu className="w-6 h-6 text-[#C56A4A] mb-1" />
+            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl bg-gradient-to-tr from-[#8B6FC7] to-[#7ED6A5] p-[2px] shadow-2xl shadow-indigo-600/30 animate-pulse-subtle">
+              <div className="w-full h-full bg-[#171B1F] rounded-[22px] flex flex-col items-center justify-center p-2">
+                <Cpu className="w-6 h-6 text-[#8B6FC7] mb-1" />
                 <span className="text-xs font-extrabold text-white leading-none">Alex.Twin</span>
-                <span className="text-[9px] text-[#91A889] font-mono mt-1">v2.6 active</span>
+                <span className="text-[9px] text-[#7ED6A5] font-mono mt-1">v2.6 active</span>
               </div>
             </div>
-            <span className="text-[11px] font-semibold text-gray-300 mt-2 bg-[#2A1E18]/90 px-2.5 py-0.5 rounded-full border border-white/[0.08]">
+            <span className="text-[11px] font-semibold text-gray-300 mt-2 bg-[#171B1F]/90 px-2.5 py-0.5 rounded-full border border-white/[0.08]">
               78% Placement Ready
             </span>
           </div>
@@ -189,7 +189,7 @@ export const DigitalTwinPage: React.FC = () => {
         </div>
 
         {/* Node Inspector Side Panel */}
-        <div className="lg:col-span-4 bg-[#3A2A22] border border-white/[0.08] rounded-2xl p-6 flex flex-col justify-between space-y-5">
+        <div className="lg:col-span-4 bg-[#232A30] border border-white/[0.08] rounded-2xl p-6 flex flex-col justify-between space-y-5">
           <div>
             <div className="flex items-center justify-between mb-3 pb-3 border-b border-white/[0.06]">
               <span className="text-xs font-bold text-gray-400 uppercase tracking-wider">
@@ -206,7 +206,7 @@ export const DigitalTwinPage: React.FC = () => {
               <div className="space-y-4">
                 <div>
                   <h3 className="text-lg font-bold text-white">{selectedNode.label}</h3>
-                  <div className="text-3xl font-extrabold text-[#C56A4A] mt-1">
+                  <div className="text-3xl font-extrabold text-[#8B6FC7] mt-1">
                     {selectedNode.score}%
                   </div>
                   <p className="text-xs text-gray-400 mt-2 leading-relaxed">
@@ -214,7 +214,7 @@ export const DigitalTwinPage: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="bg-[#2A1E18] p-3.5 rounded-xl border border-white/[0.06] space-y-2 text-xs">
+                <div className="bg-[#171B1F] p-3.5 rounded-xl border border-white/[0.06] space-y-2 text-xs">
                   <div className="flex justify-between text-gray-400">
                     <span>Last Synced:</span>
                     <span className="text-gray-200 font-medium">{selectedNode.updatedAgo}</span>
@@ -231,7 +231,7 @@ export const DigitalTwinPage: React.FC = () => {
 
                 {selectedNode.status === 'Attention' && (
                   <div className="bg-amber-500/10 border border-amber-500/20 p-3 rounded-xl text-xs text-amber-200 flex items-start gap-2">
-                    <AlertTriangle className="w-4 h-4 text-[#D6A05A] shrink-0 mt-0.5" />
+                    <AlertTriangle className="w-4 h-4 text-[#F4B860] shrink-0 mt-0.5" />
                     <span>
                       This node is currently dragging your placement readiness score down by ~7%. Prioritize this in your roadmap.
                     </span>
@@ -248,19 +248,19 @@ export const DigitalTwinPage: React.FC = () => {
               Recently Synced Events
             </div>
             <div className="space-y-1.5 text-xs text-gray-300">
-              <div className="flex items-center justify-between p-2 rounded-lg bg-[#2A1E18]">
+              <div className="flex items-center justify-between p-2 rounded-lg bg-[#171B1F]">
                 <span>GitHub Commits</span>
                 <span className="text-[11px] text-gray-500">2 hours ago</span>
               </div>
-              <div className="flex items-center justify-between p-2 rounded-lg bg-[#2A1E18]">
+              <div className="flex items-center justify-between p-2 rounded-lg bg-[#171B1F]">
                 <span>LeetCode Progress</span>
                 <span className="text-[11px] text-gray-500">Yesterday</span>
               </div>
-              <div className="flex items-center justify-between p-2 rounded-lg bg-[#2A1E18]">
+              <div className="flex items-center justify-between p-2 rounded-lg bg-[#171B1F]">
                 <span>Resume ATS Scan</span>
                 <span className="text-[11px] text-gray-500">3 days ago</span>
               </div>
-              <div className="flex items-center justify-between p-2 rounded-lg bg-[#2A1E18]">
+              <div className="flex items-center justify-between p-2 rounded-lg bg-[#171B1F]">
                 <span>Mock Interview Round</span>
                 <span className="text-[11px] text-gray-500">5 days ago</span>
               </div>
