@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme {
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Bodoni Moda', Georgia, serif;
+
   --color-brand-ink: #171B1F;
   --color-brand-primary: #2E9D6B;
   --color-brand-mint: #7ED6A5;
@@ -58,10 +61,55 @@
 body {
   background-color: #171B1F;
   color: #F4F1EA;
-  font-family: Georgia, Cambria, 'Times New Roman', serif;
+  font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2 {
+  font-family: 'Bodoni Moda', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-wrap: balance;
+  font-optical-sizing: auto;
+}
+
+h1 {
+  line-height: 1.08;
+}
+
+h2 {
+  line-height: 1.15;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  text-wrap: balance;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Keep scores and compact dashboard data aligned while they change. */
+[class*="text-2xl"],
+[class*="text-3xl"],
+[class*="text-4xl"],
+[class*="text-5xl"] {
+  font-variant-numeric: tabular-nums lining-nums;
 }
 
 /* Custom subtle scrollbar */
