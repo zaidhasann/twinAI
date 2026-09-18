@@ -34,7 +34,9 @@ export const DashboardLayout: React.FC = () => {
         <div className="flex items-center justify-between lg:block">
           <button
             onClick={() => setSidebarOpen(true)}
-            className="lg:hidden p-3 text-gray-400 hover:text-white bg-[#171B1F] border-b border-white/[0.08] w-full flex items-center gap-3"
+            aria-label="Open navigation menu"
+            aria-expanded={sidebarOpen}
+            className="lg:hidden p-3 text-gray-400 hover:text-white bg-[#171B1F] border-b border-white/[0.08] w-full flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#8B6FC7]"
           >
             <Menu className="w-5 h-5" />
             <span className="text-xs font-semibold text-gray-300">TwinAI Menu</span>

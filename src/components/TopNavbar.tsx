@@ -54,7 +54,7 @@ export const TopNavbar: React.FC<{ onOpenAssistant: () => void }> = ({ onOpenAss
  return (
  <header className="h-16 border-b border-white/[0.08] bg-[#171B1F]/90 backdrop-blur-md px-4 sm:px-6 flex items-center justify-between sticky top-0 z-30">
  {/* Left: Global Search Bar */}
- <form onSubmit={handleSearchSubmit} className="relative w-64 md:w-96">
+ <form onSubmit={handleSearchSubmit} className="relative flex-1 min-w-0 max-w-md">
  <Search className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
  <input
  type="text"
@@ -102,6 +102,8 @@ export const TopNavbar: React.FC<{ onOpenAssistant: () => void }> = ({ onOpenAss
  }}
  className="relative p-2 rounded-xl text-gray-400 hover:text-white hover:bg-white/[0.05] transition-colors"
  aria-label="Notifications"
+ aria-expanded={showNotifications}
+ aria-haspopup="menu"
  >
  <Bell className="w-4 h-4" />
  {unreadCount > 0 && (
@@ -162,6 +164,8 @@ export const TopNavbar: React.FC<{ onOpenAssistant: () => void }> = ({ onOpenAss
  setShowNotifications(false);
  }}
  className="flex items-center gap-2 p-1 pl-1.5 pr-2 rounded-xl hover:bg-white/[0.05] transition-colors border border-transparent hover:border-white/[0.06]"
+ aria-expanded={showProfileMenu}
+ aria-haspopup="menu"
  >
  <div className="w-7 h-7 rounded-lg overflow-hidden border border-[#8B6FC7]/50 bg-indigo-900/30 flex items-center justify-center text-xs font-bold text-white">
  {profile ? profile.name.split(' ').map(n => n[0]).join('') : 'AS'}

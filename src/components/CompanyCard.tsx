@@ -1,5 +1,6 @@
 import React from 'react';
 import { Building2, MapPin, TrendingUp, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { CompanyMatch } from '../types';
 
 interface CompanyCardProps {
@@ -16,9 +17,10 @@ export function CompanyCard({ company, onClick }: CompanyCardProps) {
       : '#FF8066';
 
   return (
-    <div
+    <Link
+      to={`/companies/${company.id}`}
       onClick={onClick}
-      className="bg-[#232A30] border border-white/[0.06] rounded-2xl p-5 hover:border-white/[0.12] hover:bg-[#2D353B] transition-all cursor-pointer group"
+      className="block bg-[#232A30] border border-white/[0.06] rounded-2xl p-5 hover:border-white/[0.12] hover:bg-[#2D353B] transition-all cursor-pointer group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8B6FC7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#171B1F]"
     >
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
@@ -90,6 +92,6 @@ export function CompanyCard({ company, onClick }: CompanyCardProps) {
           <span className="text-[10px] text-gray-500">{company.status}</span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

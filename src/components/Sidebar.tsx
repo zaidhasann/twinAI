@@ -43,6 +43,7 @@ export function Sidebar({ collapsed, onToggle, mobileOpen = false }: SidebarProp
           if (mobileOpen) onToggle();
         }}
         title={collapsed ? label : undefined}
+        aria-current={active ? 'page' : undefined}
         className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all group relative ${
           active
             ? 'bg-[#8B6FC7]/15 text-white border border-[#8B6FC7]/30'
@@ -67,6 +68,8 @@ export function Sidebar({ collapsed, onToggle, mobileOpen = false }: SidebarProp
         {!collapsed && <Logo />}
         <button
           onClick={onToggle}
+          aria-label={collapsed ? 'Expand navigation' : 'Collapse navigation'}
+          aria-expanded={!collapsed}
           className="ml-auto p-1.5 rounded-lg text-gray-400 hover:text-white hover:bg-white/[0.05] transition-colors"
         >
           {collapsed ? <ChevronRight className="w-4 h-4" /> : <ChevronLeft className="w-4 h-4" />}
