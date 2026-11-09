@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "TwinAI - DSA Root-Cause Diagnostic Companion",
+  "version": "1.0.0",
+  "description": "Concept-Dependency-Graph based diagnostic overlay for LeetCode & Codeforces. Uncovers root-cause prerequisite gaps behind failed problems.",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "https://codeforces.com/*",
+    "https://leetcode.com/*",
+    "http://localhost:8000/*",
+    "http://127.0.0.1:8000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "TwinAI DSA Diagnostic Twin"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://codeforces.com/problemset/problem/*",
+        "https://codeforces.com/contest/*/problem/*",
+        "https://leetcode.com/problems/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "students": {
+    "std_01": {
+      "id": "std_01",
+      "name": "Alex Sharma",
+      "college": "ABC Engineering College",
+      "degree": "B.Tech CSE",
+      "graduationYear": 2027,
+      "cgpa": 8.4,
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+      "targetRole": "Software Development Engineer",
+      "targetSalary": "₹8-15 LPA",
+      "targetCompanies": [
+        "Microsoft",
+        "Accenture",
+        "Capgemini",
+        "TCS"
+      ],
+      "stats": {
+        "leetCodeProblems": 187,
+        "githubRepos": 12,
+        "projectsCount": 5,
+        "placementReadiness": 78,
+        "readinessDeltaMonth": 6,
+        "interviewReadiness": 64,
+        "resumeScore": 86,
+        "dsaScore": 81,
+        "developmentScore": 76,
+        "systemDesignScore": 48,
+        "dbmsScore": 58,
+        "communicationScore": 72,
+        "consistencyScore": 84,
+        "streakDays": 12
+      }
+    }
+  },
+  "concept_mastery": {},
+  "submissions": {},
+  "diagnoses": {
+    "std_01": [
+      {
+        "target_concept": "tree_dp",
+        "root_cause": "tree_dp",
+        "is_surface_symptom": false,
+        "explanation": "Diagnostic Analysis: Your difficulty in 'Tree DP (DP on Trees)' (Dynamic Programming) is localized directly to this concept (Weakness: 50.0%). All earlier foundational prerequisites (such as basic traversals and representations) are sufficiently mastered. You should focus directly on standard problem patterns and edge cases of Tree DP (DP on Trees)."
+      },
+      {
+        "target_concept": "tree_dp",
+        "root_cause": "tree_dp",
+        "is_surface_symptom": false,
+        "explanation": "Diagnostic Analysis: Your difficulty in 'Tree DP (DP on Trees)' (Dynamic Programming) is localized directly to this concept (Weakness: 50.0%). All earlier foundational prerequisites (such as basic traversals and representations) are sufficiently mastered. You should focus directly on standard problem patterns and edge cases of Tree DP (DP on Trees)."
+      }
+    ]
+  }
+}

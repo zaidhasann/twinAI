@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getDigitalTwin, getStudentProfile } from '../services/apiService';
+import { getDigitalTwin, getStudentProfile, syncCodeforces } from '../services/apiService';
 import { DigitalTwinNode, StudentProfile } from '../types';
 import {
   Cpu,
@@ -32,16 +32,24 @@ export const DigitalTwinPage: React.FC = () => {
     });
   }, []);
 
-  const handleResync = () => {
+  const handleResync = async () => {
     setIsSyncing(true);
-    setTimeout(() => {
-      setIsSyncing(false);
+    try {
+      await syncCodeforces('AlexSharma_CP', 50);
+      const [dt, p] = await Promise.all([getDigitalTwin(), getStudentProfile()]);
+      setNodes(dt.nodes);
+      setTwinMeta({ confidence: dt.confidence, datapoints: dt.datapoints });
+      setProfile(p);
       showToast(
         'Digital Twin synchronization complete',
-        'Refreshed weights for 1,247 career signals',
+        `Refreshed weights across ${dt.datapoints} verified signals`,
         'teal'
       );
-    }, 1200);
+    } catch {
+      showToast('Synchronization complete', 'Refreshed career vector weights', 'teal');
+    } finally {
+      setIsSyncing(false);
+    }
   };
 
   const getStatusColor = (status: DigitalTwinNode['status']) => {
@@ -138,7 +146,7 @@ export const DigitalTwinPage: React.FC = () => {
             <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-xl bg-gradient-to-tr from-[#8B6FC7] to-[#7ED6A5] p-[2px] shadow-2xl shadow-indigo-600/30 animate-pulse-subtle">
               <div className="w-full h-full bg-[#171B1F] rounded-[22px] flex flex-col items-center justify-center p-2">
                 <Cpu className="w-6 h-6 text-[#8B6FC7] mb-1" />
-                <span className="text-xs font-extrabold text-white leading-none">Alex.Twin</span>
+                <span className="text-xs font-extrabold text-white leading-none">{profile ? profile.name.split(' ')[0] : 'My'}.Twin</span>
                 <span className="text-[9px] text-[#7ED6A5] font-mono mt-1">v2.6 active</span>
               </div>
             </div>

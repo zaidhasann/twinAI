@@ -16,6 +16,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { getNotifications, getStudentProfile } from '../services/apiService';
 import { NotificationItem, StudentProfile } from '../types';
 import { useToast } from './ToastProvider';
+import { StudentAuthModal } from './StudentAuthModal';
 
 export const TopNavbar: React.FC<{ onOpenAssistant: () => void }> = ({ onOpenAssistant }) => {
   const [notifications, setNotifications] = useState<NotificationItem[]>([]);
@@ -23,6 +24,7 @@ export const TopNavbar: React.FC<{ onOpenAssistant: () => void }> = ({ onOpenAss
   const [showProfileMenu, setShowProfileMenu] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [profile, setProfile] = useState<StudentProfile | null>(null);
+  const [showAuthModal, setShowAuthModal] = useState(false);
   const { showToast } = useToast();
   const navigate = useNavigate();
 
@@ -219,6 +221,12 @@ export const TopNavbar: React.FC<{ onOpenAssistant: () => void }> = ({ onOpenAss
  )}
  </div>
  </div>
- </header>
+   <StudentAuthModal
+        isOpen={showAuthModal}
+        onClose={() => setShowAuthModal(false)}
+        onProfileUpdated={() => getStudentProfile().then(setProfile)}
+        initialName={profile?.name || ''}
+      />
+    </header>
  );
 };
